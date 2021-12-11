@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DevNormalStateView">
+            <rect key="frame" x="0.0" y="0.0" width="132" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Cb-Ge-6c7" customClass="StateFunctionNormalView">
+                    <rect key="frame" x="0.0" y="0.0" width="66" height="80"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZWJ-Bw-wg7" customClass="StateFunctionNormalView">
+                    <rect key="frame" x="66" y="0.0" width="66" height="80"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vQG-g0-IO5" customClass="StateFunctionNormalView">
+                    <rect key="frame" x="66" y="80" width="66" height="80"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O6O-J9-MMe" customClass="StateFunctionCustomView">
+                    <rect key="frame" x="0.0" y="80" width="66" height="80"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WsE-SZ-QJh" customClass="StateFunctionNormalView">
+                    <rect key="frame" x="0.0" y="80" width="66" height="80"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ZWJ-Bw-wg7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6g9-6m-9pE"/>
+                <constraint firstAttribute="bottom" secondItem="O6O-J9-MMe" secondAttribute="bottom" id="7Zc-h8-2cu"/>
+                <constraint firstItem="vQG-g0-IO5" firstAttribute="height" secondItem="1Cb-Ge-6c7" secondAttribute="height" id="8dO-RI-9kX"/>
+                <constraint firstItem="O6O-J9-MMe" firstAttribute="height" secondItem="1Cb-Ge-6c7" secondAttribute="height" id="B5P-xY-Fua"/>
+                <constraint firstItem="O6O-J9-MMe" firstAttribute="top" secondItem="WsE-SZ-QJh" secondAttribute="top" id="Chp-eU-xcM"/>
+                <constraint firstItem="ZWJ-Bw-wg7" firstAttribute="height" secondItem="1Cb-Ge-6c7" secondAttribute="height" id="KIQ-rb-ZGs"/>
+                <constraint firstItem="vQG-g0-IO5" firstAttribute="width" secondItem="1Cb-Ge-6c7" secondAttribute="width" id="QMh-WA-OU7"/>
+                <constraint firstItem="ZWJ-Bw-wg7" firstAttribute="width" secondItem="1Cb-Ge-6c7" secondAttribute="width" id="SQH-Pm-ene"/>
+                <constraint firstItem="1Cb-Ge-6c7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TkE-RS-wwR"/>
+                <constraint firstAttribute="trailing" secondItem="vQG-g0-IO5" secondAttribute="trailing" id="XS2-NJ-Qil"/>
+                <constraint firstItem="1Cb-Ge-6c7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cDQ-9I-93B"/>
+                <constraint firstItem="O6O-J9-MMe" firstAttribute="width" secondItem="1Cb-Ge-6c7" secondAttribute="width" id="ilU-Of-MTj"/>
+                <constraint firstAttribute="trailing" secondItem="ZWJ-Bw-wg7" secondAttribute="trailing" id="k9b-mJ-dGD"/>
+                <constraint firstItem="vQG-g0-IO5" firstAttribute="leading" secondItem="O6O-J9-MMe" secondAttribute="trailing" id="m1o-Hg-ILS"/>
+                <constraint firstItem="O6O-J9-MMe" firstAttribute="bottom" secondItem="WsE-SZ-QJh" secondAttribute="bottom" id="phO-oG-Qzb"/>
+                <constraint firstItem="ZWJ-Bw-wg7" firstAttribute="leading" secondItem="1Cb-Ge-6c7" secondAttribute="trailing" id="r7e-Cy-fua"/>
+                <constraint firstItem="O6O-J9-MMe" firstAttribute="leading" secondItem="WsE-SZ-QJh" secondAttribute="leading" id="uUd-wO-nRG"/>
+                <constraint firstAttribute="bottom" secondItem="vQG-g0-IO5" secondAttribute="bottom" id="vy1-gk-YSZ"/>
+                <constraint firstItem="O6O-J9-MMe" firstAttribute="top" secondItem="1Cb-Ge-6c7" secondAttribute="bottom" id="wph-v4-KWV"/>
+                <constraint firstItem="O6O-J9-MMe" firstAttribute="trailing" secondItem="WsE-SZ-QJh" secondAttribute="trailing" id="yqg-Oe-oqq"/>
+                <constraint firstItem="O6O-J9-MMe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="yv3-RV-v8O"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bikeReportView" destination="ZWJ-Bw-wg7" id="Boi-o1-2Gd"/>
+                <outlet property="gprsServiceView" destination="O6O-J9-MMe" id="aEt-GS-sMe"/>
+                <outlet property="helpFindView" destination="vQG-g0-IO5" id="0fk-1y-BEB"/>
+                <outlet property="securityView" destination="1Cb-Ge-6c7" id="WYe-0h-dDJ"/>
+                <outlet property="serviceView" destination="WsE-SZ-QJh" id="5JN-qZ-cj2"/>
+            </connections>
+            <point key="canvasLocation" x="130" y="231"/>
+        </view>
+    </objects>
+</document>

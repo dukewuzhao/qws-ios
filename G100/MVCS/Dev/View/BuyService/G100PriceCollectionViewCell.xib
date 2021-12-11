@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="G100PriceCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="220" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="220" height="90"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="255" verticalHuggingPriority="252" text="年度套餐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOR-YL-Cso">
+                        <rect key="frame" x="10" y="16" width="61.5" height="18"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRa-9w-Zou">
+                        <rect key="frame" x="164" y="8" width="46" height="38.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8折优惠" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1s-OO-gmk">
+                        <rect key="frame" x="10" y="41" width="49" height="20"/>
+                        <color key="backgroundColor" red="1" green="0.44705882352941173" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="sIg-jk-Bo9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="              " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rc8-oY-fo5">
+                        <rect key="frame" x="165.5" y="47" width="44.5" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="立享75折，付九月用一年" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c16-rZ-GfQ">
+                        <rect key="frame" x="10" y="66" width="200" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="rc8-oY-fo5" firstAttribute="firstBaseline" secondItem="g1s-OO-gmk" secondAttribute="baseline" id="31r-QW-NLt"/>
+                <constraint firstItem="rc8-oY-fo5" firstAttribute="trailing" secondItem="c16-rZ-GfQ" secondAttribute="trailing" id="3zN-9E-XuG"/>
+                <constraint firstItem="rc8-oY-fo5" firstAttribute="top" secondItem="hRa-9w-Zou" secondAttribute="bottom" constant="0.5" id="50V-fZ-D2k"/>
+                <constraint firstItem="TOR-YL-Cso" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="FSe-Zr-0Y0"/>
+                <constraint firstItem="hRa-9w-Zou" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="HqR-MW-dMg"/>
+                <constraint firstItem="c16-rZ-GfQ" firstAttribute="leading" secondItem="TOR-YL-Cso" secondAttribute="leading" id="Igk-t5-sOR"/>
+                <constraint firstItem="c16-rZ-GfQ" firstAttribute="top" secondItem="g1s-OO-gmk" secondAttribute="bottom" constant="5" id="MGc-0c-bTJ"/>
+                <constraint firstItem="hRa-9w-Zou" firstAttribute="trailing" secondItem="rc8-oY-fo5" secondAttribute="trailing" id="Mpu-FC-3tI"/>
+                <constraint firstAttribute="trailing" secondItem="hRa-9w-Zou" secondAttribute="trailing" constant="10" id="Ni5-I7-Tug"/>
+                <constraint firstItem="rc8-oY-fo5" firstAttribute="bottom" secondItem="g1s-OO-gmk" secondAttribute="bottom" id="QjE-zX-uai"/>
+                <constraint firstItem="g1s-OO-gmk" firstAttribute="top" secondItem="TOR-YL-Cso" secondAttribute="bottom" constant="7" id="SQu-hB-2nw"/>
+                <constraint firstItem="TOR-YL-Cso" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="WZ8-7A-ckY"/>
+                <constraint firstItem="g1s-OO-gmk" firstAttribute="leading" secondItem="TOR-YL-Cso" secondAttribute="leading" id="zLr-UI-N3A"/>
+            </constraints>
+            <size key="customSize" width="220" height="102"/>
+            <connections>
+                <outlet property="descLabel" destination="c16-rZ-GfQ" id="IP4-HB-LZ7"/>
+                <outlet property="originalPriceLabel" destination="rc8-oY-fo5" id="Uj1-w9-2Xv"/>
+                <outlet property="planYearLabel" destination="TOR-YL-Cso" id="cFA-YT-3SB"/>
+                <outlet property="priceLabel" destination="hRa-9w-Zou" id="Yd1-zx-OgY"/>
+                <outlet property="saleLabel" destination="g1s-OO-gmk" id="Bzj-Wb-kUB"/>
+            </connections>
+            <point key="canvasLocation" x="-44" y="59"/>
+        </collectionViewCell>
+    </objects>
+</document>

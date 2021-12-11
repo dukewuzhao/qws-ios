@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BikeQRCodeView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="raP-uZ-f7k">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cjo-MK-icL">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="cjo-MK-icL" secondAttribute="height" multiplier="1:1" id="m7y-MS-9qM"/>
+                            </constraints>
+                        </imageView>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="tgv-ee-uP2">
+                            <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </activityIndicatorView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="扫描二维码绑定车辆" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fuo-cB-ypU">
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="cjo-MK-icL" secondAttribute="trailing" id="1W1-e3-sru"/>
+                        <constraint firstItem="tgv-ee-uP2" firstAttribute="centerY" secondItem="cjo-MK-icL" secondAttribute="centerY" id="2bc-IF-y7A"/>
+                        <constraint firstItem="cjo-MK-icL" firstAttribute="top" secondItem="Fuo-cB-ypU" secondAttribute="bottom" constant="10" id="HJh-dG-QRA"/>
+                        <constraint firstAttribute="bottom" secondItem="cjo-MK-icL" secondAttribute="bottom" id="Inn-fO-uRg"/>
+                        <constraint firstAttribute="width" secondItem="raP-uZ-f7k" secondAttribute="height" multiplier="100:117" id="J9L-82-UDd"/>
+                        <constraint firstItem="Fuo-cB-ypU" firstAttribute="centerX" secondItem="raP-uZ-f7k" secondAttribute="centerX" id="MQs-tH-0rR"/>
+                        <constraint firstItem="tgv-ee-uP2" firstAttribute="centerX" secondItem="cjo-MK-icL" secondAttribute="centerX" id="fA0-eE-N4M"/>
+                        <constraint firstItem="cjo-MK-icL" firstAttribute="leading" secondItem="raP-uZ-f7k" secondAttribute="leading" id="mef-EE-V6w"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="raP-uZ-f7k" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="UYC-mb-2H2"/>
+                <constraint firstItem="raP-uZ-f7k" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-20" id="icB-C7-XHG"/>
+                <constraint firstItem="raP-uZ-f7k" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="60" id="kwH-6i-q4L"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="containerView" destination="raP-uZ-f7k" id="9vU-BS-V53"/>
+                <outlet property="indicatorView" destination="tgv-ee-uP2" id="7ah-iC-jaA"/>
+                <outlet property="qrImageView" destination="cjo-MK-icL" id="qZa-aq-AMh"/>
+                <outlet property="titleLabel" destination="Fuo-cB-ypU" id="hVx-ea-E4a"/>
+            </connections>
+        </view>
+    </objects>
+</document>

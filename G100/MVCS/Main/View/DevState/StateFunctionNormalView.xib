@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Y8W-NW-4SJ" customClass="StateFunctionNormalView">
+            <rect key="frame" x="0.0" y="0.0" width="66" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XLF-pa-Y0d">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="KYW-dE-KNQ"/>
+                        <constraint firstAttribute="width" constant="36" id="psB-Ur-9sf"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Niw-2e-1JT">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="58c-4C-8sh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s8j-uq-iqC" customClass="G100ClickEffectView">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="s8j-uq-iqC" firstAttribute="leading" secondItem="Y8W-NW-4SJ" secondAttribute="leading" id="Eu5-we-FbE"/>
+                <constraint firstAttribute="bottom" secondItem="s8j-uq-iqC" secondAttribute="bottom" id="NfT-Oq-TvK"/>
+                <constraint firstItem="XLF-pa-Y0d" firstAttribute="centerY" secondItem="Y8W-NW-4SJ" secondAttribute="centerY" constant="-7" id="O42-fP-jcf"/>
+                <constraint firstAttribute="trailing" secondItem="s8j-uq-iqC" secondAttribute="trailing" id="UwD-3k-UVn"/>
+                <constraint firstItem="XLF-pa-Y0d" firstAttribute="centerX" secondItem="Y8W-NW-4SJ" secondAttribute="centerX" id="Ybd-ys-mdy"/>
+                <constraint firstAttribute="trailing" secondItem="Niw-2e-1JT" secondAttribute="trailing" id="eMp-nA-KZZ"/>
+                <constraint firstItem="s8j-uq-iqC" firstAttribute="top" secondItem="Y8W-NW-4SJ" secondAttribute="top" id="j4w-db-klN"/>
+                <constraint firstItem="Niw-2e-1JT" firstAttribute="top" secondItem="XLF-pa-Y0d" secondAttribute="bottom" constant="5" id="rTM-Ua-LHn"/>
+                <constraint firstItem="Niw-2e-1JT" firstAttribute="leading" secondItem="Y8W-NW-4SJ" secondAttribute="leading" id="ze0-VG-7Pa"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="clickEffectView" destination="s8j-uq-iqC" id="TQQ-MX-1RA"/>
+                <outlet property="functionImageView" destination="XLF-pa-Y0d" id="3Zz-3m-6jy"/>
+                <outlet property="functionLabel" destination="Niw-2e-1JT" id="YeI-dM-C90"/>
+            </connections>
+            <point key="canvasLocation" x="254" y="350"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>status</key>
+		<string>警戒模式</string>
+		<key>detail</key>
+		<string>所有检测到的状态都会及时通知</string>
+		<key>image</key>
+		<string>2_0_ic_set_security_high</string>
+	</dict>
+	<dict>
+		<key>status</key>
+		<string>标准模式</string>
+		<key>detail</key>
+		<string>仅检测到风险状态时提醒</string>
+		<key>image</key>
+		<string>2_0_ic_set_security_medium</string>
+	</dict>
+	<dict>
+		<key>status</key>
+		<string>免打扰模式</string>
+		<key>detail</key>
+		<string>系统智能识别风险，减少提醒频率，只在高危状态时提醒</string>
+		<key>image</key>
+		<string>2_0_ic_set_security_low</string>
+	</dict>
+	<dict>
+		<key>status</key>
+		<string>关闭通知</string>
+		<key>detail</key>
+		<string>关闭通知后，您将无法收到车辆报警信息，请谨慎操作</string>
+		<key>image</key>
+		<string>2_0_ic_set_security_custom</string>
+	</dict>
+	<dict>
+		<key>status</key>
+		<string>寻车模式</string>
+		<key>detail</key>
+		<string>上报丢车后，自动切换至此模式。仅提醒非法位移、电门打开、电门关闭、电瓶移除</string>
+		<key>image</key>
+		<string>2_0_ic_set_security_find</string>
+	</dict>
+</array>
+</plist>

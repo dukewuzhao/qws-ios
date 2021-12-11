@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="G100TrackFuncView">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="48"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msm-Il-Iab">
+                    <rect key="frame" x="20" y="4.5" width="59" height="39"/>
+                    <state key="normal" image="play"/>
+                    <state key="selected" image="pause"/>
+                    <connections>
+                        <action selector="btnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="MOf-y5-SQs"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6HA-pz-rLB">
+                    <rect key="frame" x="117.5" y="4.5" width="59" height="39"/>
+                    <state key="normal" image="speed1"/>
+                    <connections>
+                        <action selector="btnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="uRH-Md-N6c"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ek-ZL-0Yf">
+                    <rect key="frame" x="197.5" y="4.5" width="59" height="39"/>
+                    <state key="normal" image="shownearby"/>
+                    <state key="selected" image="showAll"/>
+                    <connections>
+                        <action selector="btnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="b5g-0F-5dc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZN-eA-oN7">
+                    <rect key="frame" x="295" y="4.5" width="59" height="39"/>
+                    <state key="normal" image="showcure"/>
+                    <state key="selected" image="showdata"/>
+                    <connections>
+                        <action selector="btnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="3DX-ZR-otf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="3Ek-ZL-0Yf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="0aI-kg-evu"/>
+                <constraint firstItem="6HA-pz-rLB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-40" id="8Q0-t7-vtz"/>
+                <constraint firstItem="msm-Il-Iab" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="LsU-nW-3No"/>
+                <constraint firstItem="dZN-eA-oN7" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="OCQ-24-Jp1"/>
+                <constraint firstItem="3Ek-ZL-0Yf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="40" id="WMs-Yy-yk2"/>
+                <constraint firstItem="6HA-pz-rLB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="cw2-si-C9I"/>
+                <constraint firstItem="msm-Il-Iab" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="i8c-TU-sYS"/>
+                <constraint firstAttribute="trailing" secondItem="dZN-eA-oN7" secondAttribute="trailing" constant="20" id="nBR-bE-GJz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cureTypeBtn" destination="dZN-eA-oN7" id="WpR-Ni-bWm"/>
+                <outlet property="mapTypeBtn" destination="3Ek-ZL-0Yf" id="tLg-Vh-xJj"/>
+                <outlet property="speeddBtn" destination="6HA-pz-rLB" id="aMT-lD-btt"/>
+                <outlet property="startBtn" destination="msm-Il-Iab" id="tbX-kj-TYr"/>
+            </connections>
+            <point key="canvasLocation" x="-51" y="-105"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pause" width="60" height="40"/>
+        <image name="play" width="59" height="39"/>
+        <image name="showAll" width="59" height="39"/>
+        <image name="showcure" width="59" height="39"/>
+        <image name="showdata" width="59" height="39"/>
+        <image name="shownearby" width="59" height="39"/>
+        <image name="speed1" width="59" height="39"/>
+    </resources>
+</document>

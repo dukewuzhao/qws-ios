@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="G100PhotoPickerCell">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJy-Mw-hdN">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                        <state key="normal" image="ic_btn_picture_add"/>
+                        <connections>
+                            <action selector="addNewPhoto:" destination="gTV-IL-0wX" eventType="touchUpInside" id="UEH-Y0-rZr"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="tJy-Mw-hdN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="4qo-76-vru"/>
+                <constraint firstAttribute="bottom" secondItem="tJy-Mw-hdN" secondAttribute="bottom" id="ObX-AV-Kaq"/>
+                <constraint firstItem="tJy-Mw-hdN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="m3V-0t-CD0"/>
+                <constraint firstAttribute="trailing" secondItem="tJy-Mw-hdN" secondAttribute="trailing" id="wqx-X0-pHv"/>
+            </constraints>
+            <size key="customSize" width="97" height="108"/>
+            <point key="canvasLocation" x="167" y="194"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_btn_picture_add" width="83" height="83"/>
+    </resources>
+</document>

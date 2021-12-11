@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Dth-7e-AnQ" customClass="G100FindButton">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demo_iv_2" translatesAutoresizingMaskIntoConstraints="NO" id="gNZ-2W-hV4">
+                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="行" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hes-iv-hi4">
+                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="60"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="0.83999999999999997" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="hes-iv-hi4" secondAttribute="bottom" id="0rq-BY-NYD"/>
+                <constraint firstItem="hes-iv-hi4" firstAttribute="leading" secondItem="Dth-7e-AnQ" secondAttribute="leading" id="Anv-Lh-ttl"/>
+                <constraint firstAttribute="trailing" secondItem="hes-iv-hi4" secondAttribute="trailing" id="Y6p-xx-ImV"/>
+                <constraint firstItem="gNZ-2W-hV4" firstAttribute="leading" secondItem="Dth-7e-AnQ" secondAttribute="leading" id="giW-ia-3aR"/>
+                <constraint firstAttribute="trailing" secondItem="gNZ-2W-hV4" secondAttribute="trailing" id="ikD-Qe-UP1"/>
+                <constraint firstAttribute="bottom" secondItem="gNZ-2W-hV4" secondAttribute="bottom" id="krF-ko-kxK"/>
+                <constraint firstItem="gNZ-2W-hV4" firstAttribute="top" secondItem="Dth-7e-AnQ" secondAttribute="top" id="mv8-4u-Zbn"/>
+                <constraint firstItem="hes-iv-hi4" firstAttribute="top" secondItem="Dth-7e-AnQ" secondAttribute="top" id="oe3-dP-Sgo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backImageView" destination="gNZ-2W-hV4" id="Eau-XW-pHS"/>
+                <outlet property="hintTitleLabel" destination="hes-iv-hi4" id="Nre-Rb-Xt3"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="demo_iv_2" width="221" height="146"/>
+    </resources>
+</document>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChangePhoneNumViewController">
+            <connections>
+                <outlet property="changeBtn" destination="zNW-G1-cfP" id="HRn-pU-fkJ"/>
+                <outlet property="phoneIconConstraintTop" destination="fCD-SF-qqr" id="QRK-ix-GFB"/>
+                <outlet property="phoneLabel" destination="QjO-aD-GlB" id="8mc-jy-jkJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_user_phone" translatesAutoresizingMaskIntoConstraints="NO" id="NXz-9e-8Pm">
+                    <rect key="frame" x="100" y="90" width="120" height="228"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="NXz-9e-8Pm" secondAttribute="height" multiplier="10:19" id="hb1-CR-Thi"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您的手机号：13373911572" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QjO-aD-GlB">
+                    <rect key="frame" x="40" y="334" width="240" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="QjO-aD-GlB" secondAttribute="height" multiplier="80:7" id="Xbq-5a-0cR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您可以通过手机号找回您的密码" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQe-Ut-Gqi">
+                    <rect key="frame" x="41" y="363" width="238" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="fQe-Ut-Gqi" secondAttribute="height" multiplier="34:3" id="JeX-UT-XtO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNW-G1-cfP">
+                    <rect key="frame" x="40" y="400" width="240" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="76k-Yj-C6b"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="更换手机号" backgroundImage="ic_service_commit_btn_bg">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="changeEvent:" destination="-1" eventType="touchUpInside" id="Ppy-S0-LNp"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QjO-aD-GlB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="4uL-bk-zzT"/>
+                <constraint firstItem="zNW-G1-cfP" firstAttribute="top" secondItem="fQe-Ut-Gqi" secondAttribute="bottom" constant="16" id="9ea-aO-FTr"/>
+                <constraint firstItem="zNW-G1-cfP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="9ih-PS-Gcu"/>
+                <constraint firstItem="fQe-Ut-Gqi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="41" id="9ov-nP-75e"/>
+                <constraint firstAttribute="trailing" secondItem="QjO-aD-GlB" secondAttribute="trailing" constant="40" id="9qt-et-j3i"/>
+                <constraint firstAttribute="centerX" secondItem="NXz-9e-8Pm" secondAttribute="centerX" id="AF4-IC-ACm"/>
+                <constraint firstItem="fQe-Ut-Gqi" firstAttribute="top" secondItem="QjO-aD-GlB" secondAttribute="bottom" constant="8" id="Kaq-qi-uzQ"/>
+                <constraint firstAttribute="trailing" secondItem="zNW-G1-cfP" secondAttribute="trailing" constant="40" id="Kue-ym-vEJ"/>
+                <constraint firstAttribute="centerX" secondItem="zNW-G1-cfP" secondAttribute="centerX" id="MFC-zb-CaX"/>
+                <constraint firstItem="NXz-9e-8Pm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="100" id="N9o-sw-ekI"/>
+                <constraint firstAttribute="trailing" secondItem="NXz-9e-8Pm" secondAttribute="trailing" constant="100" id="SeM-3z-VZO"/>
+                <constraint firstItem="QjO-aD-GlB" firstAttribute="top" secondItem="NXz-9e-8Pm" secondAttribute="bottom" constant="16" id="VgI-Hs-mtF"/>
+                <constraint firstItem="NXz-9e-8Pm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="90" id="fCD-SF-qqr"/>
+                <constraint firstAttribute="trailing" secondItem="fQe-Ut-Gqi" secondAttribute="trailing" constant="41" id="rMW-dx-mPu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_service_commit_btn_bg" width="341" height="60"/>
+        <image name="ic_user_phone" width="137" height="264"/>
+    </resources>
+</document>

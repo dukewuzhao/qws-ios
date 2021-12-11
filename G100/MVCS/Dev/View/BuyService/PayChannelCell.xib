@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PayChannelCell" id="KGk-i7-Jjw" customClass="PayChannelCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_channel_wx" translatesAutoresizingMaskIntoConstraints="NO" id="Hda-tC-SQx">
+                        <rect key="frame" x="20" y="8" width="28" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="28" id="EfA-Nd-mLe"/>
+                            <constraint firstAttribute="width" secondItem="Hda-tC-SQx" secondAttribute="height" multiplier="1:1" id="P66-bf-7bZ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信支付" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWs-N0-XYy">
+                        <rect key="frame" x="68" y="11.5" width="70" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_channel_normal" highlightedImage="icon_channel_selected" translatesAutoresizingMaskIntoConstraints="NO" id="5Pw-uD-dw2">
+                        <rect key="frame" x="280" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="5Pw-uD-dw2" secondAttribute="height" id="BNE-Ls-TEm"/>
+                            <constraint firstAttribute="width" constant="20" id="vr4-bO-JGu"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_channel_union" translatesAutoresizingMaskIntoConstraints="NO" id="T1B-aW-zL0">
+                        <rect key="frame" x="230" y="7" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="JFC-JA-wAI"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Hda-tC-SQx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="CSo-C8-5Ls"/>
+                    <constraint firstItem="T1B-aW-zL0" firstAttribute="centerY" secondItem="Hda-tC-SQx" secondAttribute="centerY" id="LhW-AJ-h6A"/>
+                    <constraint firstItem="fWs-N0-XYy" firstAttribute="leading" secondItem="Hda-tC-SQx" secondAttribute="trailing" constant="20" id="Pyi-ix-a7m"/>
+                    <constraint firstItem="fWs-N0-XYy" firstAttribute="centerY" secondItem="Hda-tC-SQx" secondAttribute="centerY" id="Y2C-6w-4ug"/>
+                    <constraint firstItem="Hda-tC-SQx" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ZRp-Hd-5NC"/>
+                    <constraint firstItem="5Pw-uD-dw2" firstAttribute="centerY" secondItem="Hda-tC-SQx" secondAttribute="centerY" id="Zjc-86-34v"/>
+                    <constraint firstAttribute="trailing" secondItem="5Pw-uD-dw2" secondAttribute="trailing" constant="20" id="cOk-0o-ARD"/>
+                    <constraint firstItem="5Pw-uD-dw2" firstAttribute="leading" secondItem="T1B-aW-zL0" secondAttribute="trailing" constant="20" id="jcH-eb-e9G"/>
+                    <constraint firstItem="T1B-aW-zL0" firstAttribute="width" secondItem="T1B-aW-zL0" secondAttribute="height" multiplier="1:1" id="kEU-p7-1k9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImageView" destination="T1B-aW-zL0" id="Ocn-oj-Jbh"/>
+                <outlet property="leftImageView" destination="Hda-tC-SQx" id="Iv0-GJ-ZI0"/>
+                <outlet property="statusImageView" destination="5Pw-uD-dw2" id="h6Y-hM-m6U"/>
+                <outlet property="titleLabel" destination="fWs-N0-XYy" id="BBZ-9k-HeC"/>
+            </connections>
+            <point key="canvasLocation" x="30" y="66"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_channel_normal" width="19" height="19"/>
+        <image name="icon_channel_selected" width="13" height="13"/>
+        <image name="icon_channel_union" width="25" height="25"/>
+        <image name="icon_channel_wx" width="25" height="25"/>
+    </resources>
+</document>

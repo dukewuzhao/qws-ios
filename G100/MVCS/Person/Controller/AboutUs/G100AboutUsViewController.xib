@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="G100AboutUsViewController">
+            <connections>
+                <outlet property="contentTableView" destination="jz2-Y3-T30" id="J7r-EO-0hM"/>
+                <outlet property="copyrightLabel" destination="FHd-DI-Mcl" id="uiD-X9-E5s"/>
+                <outlet property="footerView" destination="E81-37-oVU" id="rtD-G0-qE1"/>
+                <outlet property="headerView" destination="Ddx-1u-p6I" id="PQV-dD-EvS"/>
+                <outlet property="versionLabel" destination="P8I-jJ-sCY" id="4ZM-WU-RRM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="jz2-Y3-T30">
+                    <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="JxD-8h-88A"/>
+                        <outlet property="delegate" destination="-1" id="cBj-Fb-wnS"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jz2-Y3-T30" secondAttribute="trailing" id="02f-zD-WMU"/>
+                <constraint firstAttribute="bottom" secondItem="jz2-Y3-T30" secondAttribute="bottom" id="4KF-up-Elq"/>
+                <constraint firstItem="jz2-Y3-T30" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HGM-cK-XS4"/>
+                <constraint firstItem="jz2-Y3-T30" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="Uf7-i5-uDx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="508" y="140"/>
+        </view>
+        <view contentMode="scaleToFill" id="Ddx-1u-p6I">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="265"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_about_logo" translatesAutoresizingMaskIntoConstraints="NO" id="O5J-8X-aCk">
+                    <rect key="frame" x="89" y="30" width="143" height="174"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="O5J-8X-aCk" secondAttribute="height" multiplier="143:174" id="E1D-9n-fog"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="版本 V1.0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8I-jJ-sCY">
+                    <rect key="frame" x="8" y="216" width="304" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="gtH-PU-kXm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.6588235294117647" green="0.6588235294117647" blue="0.6588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="O5J-8X-aCk" firstAttribute="top" secondItem="Ddx-1u-p6I" secondAttribute="top" constant="30" id="1ch-tz-qT3"/>
+                <constraint firstAttribute="trailing" secondItem="P8I-jJ-sCY" secondAttribute="trailing" constant="8" id="3n7-eU-ebn"/>
+                <constraint firstItem="P8I-jJ-sCY" firstAttribute="leading" secondItem="Ddx-1u-p6I" secondAttribute="leading" constant="8" id="3yL-h3-F59"/>
+                <constraint firstItem="P8I-jJ-sCY" firstAttribute="centerX" secondItem="Ddx-1u-p6I" secondAttribute="centerX" id="ZAC-we-tJM"/>
+                <constraint firstAttribute="bottom" secondItem="P8I-jJ-sCY" secondAttribute="bottom" constant="28" id="ed2-Eg-EbL"/>
+                <constraint firstItem="O5J-8X-aCk" firstAttribute="centerX" secondItem="Ddx-1u-p6I" secondAttribute="centerX" id="kBK-QX-72G"/>
+                <constraint firstItem="P8I-jJ-sCY" firstAttribute="top" secondItem="O5J-8X-aCk" secondAttribute="bottom" constant="12" id="snI-rU-SuV"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="884" y="81.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="E81-37-oVU">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="版权所有  2016  qiweishi.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHd-DI-Mcl">
+                    <rect key="frame" x="20" y="9" width="280" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="6fb-Qv-iFV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.6588235294117647" green="0.6588235294117647" blue="0.6588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="FHd-DI-Mcl" firstAttribute="leading" secondItem="E81-37-oVU" secondAttribute="leading" constant="20" id="e5u-iP-Byp"/>
+                <constraint firstAttribute="bottom" secondItem="FHd-DI-Mcl" secondAttribute="bottom" constant="10" id="wNs-nU-P4N"/>
+                <constraint firstItem="FHd-DI-Mcl" firstAttribute="centerY" secondItem="E81-37-oVU" secondAttribute="centerY" id="zaF-di-Da0"/>
+                <constraint firstItem="FHd-DI-Mcl" firstAttribute="centerX" secondItem="E81-37-oVU" secondAttribute="centerX" id="zzr-30-VZi"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="zaF-di-Da0"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="884" y="279"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_about_logo" width="227" height="227"/>
+    </resources>
+</document>

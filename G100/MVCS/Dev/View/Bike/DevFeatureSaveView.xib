@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DevFeatureSaveView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="绑定日期：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEk-Cv-a3J">
+                    <rect key="frame" x="15" y="12" width="70" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="kPc-o2-CcM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.43137254901960786" green="0.43137254901960786" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="设备版本号：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDM-9V-PAt">
+                    <rect key="frame" x="15" y="33" width="84" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="5EX-mI-bQa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.43137254899999999" green="0.43137254899999999" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="套装版本号：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOW-V2-gdo">
+                    <rect key="frame" x="15" y="54" width="84" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="uXw-fA-tZF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.43137254899999999" green="0.43137254899999999" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gP5-Kq-YOr">
+                    <rect key="frame" x="20" y="100" width="280" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="aqu-rZ-SLr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="保  存" backgroundImage="ic_alarm_option_yes_up"/>
+                    <state key="selected" title="保存" backgroundImage="ic_alarm_option_yes_up"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="exclusiveTouch" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="saveDevInfoBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="HZv-0D-QoM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="EDM-9V-PAt" firstAttribute="leading" secondItem="iEk-Cv-a3J" secondAttribute="leading" id="38z-BC-EqJ"/>
+                <constraint firstItem="iEk-Cv-a3J" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="BLt-wW-rQa"/>
+                <constraint firstItem="XOW-V2-gdo" firstAttribute="top" secondItem="EDM-9V-PAt" secondAttribute="bottom" id="BRW-y8-7dq"/>
+                <constraint firstAttribute="bottom" secondItem="gP5-Kq-YOr" secondAttribute="bottom" constant="20" id="Hid-4z-SK4"/>
+                <constraint firstItem="EDM-9V-PAt" firstAttribute="top" secondItem="iEk-Cv-a3J" secondAttribute="bottom" id="HoX-0N-eEG"/>
+                <constraint firstItem="gP5-Kq-YOr" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Lye-N2-PDp"/>
+                <constraint firstItem="XOW-V2-gdo" firstAttribute="leading" secondItem="iEk-Cv-a3J" secondAttribute="leading" id="OSb-Qn-6p8"/>
+                <constraint firstItem="EDM-9V-PAt" firstAttribute="leading" secondItem="iEk-Cv-a3J" secondAttribute="leading" id="PaE-WD-zM8"/>
+                <constraint firstItem="gP5-Kq-YOr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="RLD-hh-8Hi"/>
+                <constraint firstItem="iEk-Cv-a3J" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="hk0-j5-EN7"/>
+                <constraint firstAttribute="trailing" secondItem="gP5-Kq-YOr" secondAttribute="trailing" constant="20" id="k9F-vc-L6R"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="devAlertorVersionLabel" destination="XOW-V2-gdo" id="4eu-ke-yN0"/>
+                <outlet property="devBindTimeLabel" destination="iEk-Cv-a3J" id="vIw-S3-5ee"/>
+                <outlet property="devInfoSaveBtn" destination="gP5-Kq-YOr" id="0eZ-W7-Utz"/>
+                <outlet property="devVersionLabel" destination="EDM-9V-PAt" id="eUW-AD-lhm"/>
+            </connections>
+            <point key="canvasLocation" x="-29" y="178"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_alarm_option_yes_up" width="177" height="40"/>
+    </resources>
+</document>

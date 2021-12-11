@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ntc-6C-dJJ" customClass="G100ConfirmView">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="46"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ovl-4k-c6v">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="1"/>
+                    <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="zgG-kx-VuQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x62-9e-3hZ">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="46"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" red="0.1764705882" green="0.70980392160000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnConfirmAction:" destination="Ntc-6C-dJJ" eventType="touchUpInside" id="VDr-UW-SyF"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="x62-9e-3hZ" firstAttribute="leading" secondItem="Ntc-6C-dJJ" secondAttribute="leading" id="0la-ED-xeF"/>
+                <constraint firstItem="x62-9e-3hZ" firstAttribute="top" secondItem="Ntc-6C-dJJ" secondAttribute="top" id="0xJ-cB-kNv"/>
+                <constraint firstAttribute="trailing" secondItem="Ovl-4k-c6v" secondAttribute="trailing" id="1Re-3r-ggI"/>
+                <constraint firstAttribute="trailing" secondItem="x62-9e-3hZ" secondAttribute="trailing" id="I0D-gG-gpR"/>
+                <constraint firstItem="Ovl-4k-c6v" firstAttribute="leading" secondItem="Ntc-6C-dJJ" secondAttribute="leading" id="KAg-32-9cU"/>
+                <constraint firstAttribute="bottom" secondItem="x62-9e-3hZ" secondAttribute="bottom" id="MwM-vN-xyP"/>
+                <constraint firstItem="Ovl-4k-c6v" firstAttribute="top" secondItem="Ntc-6C-dJJ" secondAttribute="top" id="vAw-2U-TbH"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="confirmBtn" destination="x62-9e-3hZ" id="Jyn-Fx-Duu"/>
+            </connections>
+            <point key="canvasLocation" x="281" y="153"/>
+        </view>
+    </objects>
+</document>

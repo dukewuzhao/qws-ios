@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16D32" minimumToolsVersion="Xcode 7.3" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="CDDAccount" representedClassName="CDDAccount" syncable="YES">
+        <attribute name="app_func" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="app_watermark" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="picvc_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="push_block" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="solution" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="token" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="bikes" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CDDBike" inverseName="account_info" inverseEntity="CDDBike" syncable="YES"/>
+        <relationship name="user_info" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CDDUser" inverseName="account_info" inverseEntity="CDDUser" syncable="YES"/>
+    </entity>
+    <entity name="CDDBike" representedClassName="CDDBike" syncable="YES">
+        <attribute name="add_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bike_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="bikeRuntime" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="brand" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="created_time" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="feature" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="is_master" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lost_count" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="lost_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="model" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="test_result" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="user_count" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="account_info" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDDAccount" inverseName="bikes" inverseEntity="CDDAccount" syncable="YES"/>
+        <relationship name="devices" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CDDDevice" inverseName="bike" inverseEntity="CDDDevice" syncable="YES"/>
+    </entity>
+    <entity name="CDDDevice" representedClassName="CDDDevice" syncable="YES">
+        <attribute name="add_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="alarm_bell_time" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="comm_mode" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="device_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="firm" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="func" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="location_display" optional="YES" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="main_device" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="model_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="model_type_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pcb" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="prigin_firm" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="qr" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="remote_ctrl_mode" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="security" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="seq" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="service" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="sn" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="warranty" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="bike" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDDBike" inverseName="devices" inverseEntity="CDDBike" syncable="YES"/>
+    </entity>
+    <entity name="CDDUser" representedClassName="CDDUser" syncable="YES">
+        <attribute name="account" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bike_count" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="birthday" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="device_count" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="icon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id_card_no" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="integrity" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nick_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone_num" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="real_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reg_time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="service_count" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="user_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="account_info" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDDAccount" inverseName="user_info" inverseEntity="CDDAccount" syncable="YES"/>
+    </entity>
+    <fetchRequest name="allAccount" entity="CDDAccount"/>
+    <elements>
+        <element name="CDDAccount" positionX="-648" positionY="32" width="128" height="180"/>
+        <element name="CDDBike" positionX="-477" positionY="90" width="128" height="285"/>
+        <element name="CDDDevice" positionX="-216" positionY="353" width="128" height="388"/>
+        <element name="CDDUser" positionX="-477" positionY="-225" width="128" height="285"/>
+    </elements>
+</model>

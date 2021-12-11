@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="yixiazaicell" id="KGk-i7-Jjw" customClass="OfflineMapCityCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上海上海上海上" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5K-QU-A03">
+                        <rect key="frame" x="13" y="11" width="112" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="120" id="PB2-G6-qD0"/>
+                            <constraint firstAttribute="height" constant="21" id="wMi-ZM-Yr5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nso-yo-df7">
+                        <rect key="frame" x="275" y="6" width="32" height="32"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" title="删除">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="buttonClickEvent:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Plg-u4-aZ7"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7S-LG-vS7">
+                        <rect key="frame" x="232" y="6" width="32" height="32"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" title="更新">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="buttonClickEvent:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ouo-1m-MZm"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TnC-bK-fZn">
+                        <rect key="frame" x="269" y="13" width="1" height="18"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="HrK-FC-Fv0"/>
+                            <constraint firstAttribute="height" constant="18" id="uPc-2f-AcJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在下载" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmT-V0-JEK">
+                        <rect key="frame" x="142" y="11" width="60" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="ZPX-xK-uzm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="Nso-yo-df7" firstAttribute="leading" secondItem="TnC-bK-fZn" secondAttribute="trailing" constant="5" id="2ZD-bp-e55"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Nso-yo-df7" secondAttribute="trailing" constant="5" id="7MA-gp-tOj"/>
+                    <constraint firstItem="Nso-yo-df7" firstAttribute="centerY" secondItem="p5K-QU-A03" secondAttribute="centerY" id="8Uv-Bz-cFr"/>
+                    <constraint firstAttribute="centerY" secondItem="p5K-QU-A03" secondAttribute="centerY" id="Cpw-ng-lIj"/>
+                    <constraint firstItem="Nso-yo-df7" firstAttribute="centerY" secondItem="P7S-LG-vS7" secondAttribute="centerY" id="QHK-Ak-gbk"/>
+                    <constraint firstItem="Nso-yo-df7" firstAttribute="centerY" secondItem="qmT-V0-JEK" secondAttribute="centerY" id="ZRp-K7-8YB"/>
+                    <constraint firstItem="TnC-bK-fZn" firstAttribute="leading" secondItem="P7S-LG-vS7" secondAttribute="trailing" constant="5" id="dSb-1g-iig"/>
+                    <constraint firstItem="Nso-yo-df7" firstAttribute="centerY" secondItem="TnC-bK-fZn" secondAttribute="centerY" id="ibk-Mn-a7f"/>
+                    <constraint firstItem="P7S-LG-vS7" firstAttribute="leading" secondItem="qmT-V0-JEK" secondAttribute="trailing" constant="30" id="s3i-9a-BJI"/>
+                    <constraint firstItem="p5K-QU-A03" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="zad-Vo-LOM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="cityLabel" destination="p5K-QU-A03" id="Vei-ma-ruE"/>
+                <outlet property="deleteButton" destination="Nso-yo-df7" id="8M9-7F-dYL"/>
+                <outlet property="seperaterLine" destination="TnC-bK-fZn" id="G1g-bx-xB6"/>
+                <outlet property="statusLabel" destination="qmT-V0-JEK" id="sht-kC-7XO"/>
+                <outlet property="updateButton" destination="P7S-LG-vS7" id="QhU-s3-OLb"/>
+            </connections>
+            <point key="canvasLocation" x="388" y="79"/>
+        </tableViewCell>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="offlineMapCityCell" id="YwM-Qj-JZ5" customClass="OfflineMapCityCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YwM-Qj-JZ5" id="Z4g-m4-q9S">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="53.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上海上海上海上" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwS-VY-ZTO">
+                        <rect key="frame" x="13" y="11" width="112" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="120" id="60X-AA-vdo"/>
+                            <constraint firstAttribute="height" constant="21" id="naq-2L-YKu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30M" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHs-sV-z4T">
+                        <rect key="frame" x="133" y="11" width="32" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="nRd-55-rgM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在下载" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWY-gJ-mfX">
+                        <rect key="frame" x="202" y="11" width="60" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="uuN-Lv-Cw5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="bof-g9-rp2">
+                        <rect key="frame" x="14" y="44" width="292" height="3"/>
+                        <color key="tintColor" red="0.4039215686" green="0.71372549019999998" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </progressView>
+                    <button opaque="NO" tag="110" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NEW-rl-4MO">
+                        <rect key="frame" x="272" y="2" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="ZGT-C2-QnI"/>
+                            <constraint firstAttribute="height" constant="40" id="gIe-jk-jo2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <state key="normal" image="ic_map_download">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="bof-g9-rp2" firstAttribute="leading" secondItem="Z4g-m4-q9S" secondAttribute="leadingMargin" constant="6" id="3gH-qx-xDZ"/>
+                    <constraint firstItem="bof-g9-rp2" firstAttribute="top" secondItem="cWY-gJ-mfX" secondAttribute="bottom" constant="12" id="4jY-Gp-URQ"/>
+                    <constraint firstItem="bwS-VY-ZTO" firstAttribute="top" secondItem="Z4g-m4-q9S" secondAttribute="topMargin" constant="3" id="KFx-nA-kMV"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="NEW-rl-4MO" secondAttribute="trailing" id="M7p-gc-Akm"/>
+                    <constraint firstItem="bwS-VY-ZTO" firstAttribute="centerY" secondItem="mHs-sV-z4T" secondAttribute="centerY" id="QkB-v3-04G"/>
+                    <constraint firstItem="NEW-rl-4MO" firstAttribute="leading" secondItem="cWY-gJ-mfX" secondAttribute="trailing" constant="10" id="Vne-rh-gE0"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="bof-g9-rp2" secondAttribute="trailing" constant="6" id="fdb-Bx-67I"/>
+                    <constraint firstItem="bwS-VY-ZTO" firstAttribute="centerY" secondItem="NEW-rl-4MO" secondAttribute="centerY" id="gdu-Rq-KZj"/>
+                    <constraint firstItem="mHs-sV-z4T" firstAttribute="leading" secondItem="bwS-VY-ZTO" secondAttribute="trailing" constant="8" id="hh9-iT-2nU"/>
+                    <constraint firstItem="bwS-VY-ZTO" firstAttribute="leading" secondItem="Z4g-m4-q9S" secondAttribute="leadingMargin" constant="5" id="imI-XM-dns"/>
+                    <constraint firstItem="bwS-VY-ZTO" firstAttribute="top" secondItem="Z4g-m4-q9S" secondAttribute="topMargin" constant="3" id="s5S-pV-SX2"/>
+                    <constraint firstItem="cWY-gJ-mfX" firstAttribute="centerY" secondItem="bwS-VY-ZTO" secondAttribute="centerY" id="xrc-Ej-VUV"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="KFx-nA-kMV"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="cityLabel" destination="bwS-VY-ZTO" id="QZI-8C-eFa"/>
+                <outlet property="sizeLabel" destination="mHs-sV-z4T" id="SAU-Oa-eBv"/>
+                <outlet property="statusButton" destination="NEW-rl-4MO" id="77Q-qH-cbk"/>
+                <outlet property="statusLabel" destination="cWY-gJ-mfX" id="Klj-g7-ikr"/>
+                <outlet property="xiazaiProgress" destination="bof-g9-rp2" id="Ecg-f0-Tnh"/>
+            </connections>
+            <point key="canvasLocation" x="388" y="184"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_map_download" width="21" height="21"/>
+    </resources>
+</document>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="G100FuncReminderSetViewController">
+            <connections>
+                <outlet property="contentTableView" destination="CbD-Df-9W5" id="bIy-VL-Glv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="CbD-Df-9W5">
+                    <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Yr9-aN-83N"/>
+                        <outlet property="delegate" destination="-1" id="Y19-Ze-gdE"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="CbD-Df-9W5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="5Hd-zg-03x"/>
+                <constraint firstAttribute="trailing" secondItem="CbD-Df-9W5" secondAttribute="trailing" id="Nhm-IW-eAr"/>
+                <constraint firstItem="CbD-Df-9W5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YTF-1e-XaG"/>
+                <constraint firstAttribute="bottom" secondItem="CbD-Df-9W5" secondAttribute="bottom" id="Z3E-k8-IpY"/>
+            </constraints>
+            <point key="canvasLocation" x="192" y="371"/>
+        </view>
+    </objects>
+</document>

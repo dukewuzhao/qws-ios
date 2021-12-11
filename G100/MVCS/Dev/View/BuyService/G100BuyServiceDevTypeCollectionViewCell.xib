@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="G100BuyServiceDevTypeCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="194" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="194" height="70"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqb-n9-Ynd">
+                        <rect key="frame" x="28" y="41" width="158" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="3ff-xi-u1f"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.37647058823529411" green="0.37647058823529411" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPS定位器" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FX3-Al-yUg">
+                        <rect key="frame" x="28" y="12" width="158" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4E-mg-OPL">
+                        <rect key="frame" x="8" y="12" width="15" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="15" id="H2T-fE-xlC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="FX3-Al-yUg" secondAttribute="trailing" constant="8" id="5ic-oC-AXs"/>
+                <constraint firstItem="T4E-mg-OPL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="Ay2-Oh-pzO"/>
+                <constraint firstItem="dqb-n9-Ynd" firstAttribute="top" secondItem="FX3-Al-yUg" secondAttribute="bottom" constant="8" id="H1V-Cd-rM4"/>
+                <constraint firstItem="T4E-mg-OPL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="Pvm-hi-cLC"/>
+                <constraint firstItem="FX3-Al-yUg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="YXI-BJ-GTx"/>
+                <constraint firstItem="FX3-Al-yUg" firstAttribute="leading" secondItem="T4E-mg-OPL" secondAttribute="trailing" constant="5" id="jvw-2e-5Bm"/>
+                <constraint firstItem="dqb-n9-Ynd" firstAttribute="leading" secondItem="FX3-Al-yUg" secondAttribute="leading" id="ldI-vt-30p"/>
+                <constraint firstAttribute="trailing" secondItem="dqb-n9-Ynd" secondAttribute="trailing" constant="8" id="nJT-2P-egw"/>
+            </constraints>
+            <size key="customSize" width="194" height="86"/>
+            <connections>
+                <outlet property="devTypeLabel" destination="FX3-Al-yUg" id="Skz-1N-XdW"/>
+                <outlet property="itemLabel" destination="T4E-mg-OPL" id="smu-K4-7ab"/>
+                <outlet property="sdHeight" destination="3ff-xi-u1f" id="nba-vK-W0S"/>
+                <outlet property="serviceDateLabel" destination="dqb-n9-Ynd" id="E0V-aq-YSH"/>
+            </connections>
+            <point key="canvasLocation" x="-214" y="89"/>
+        </collectionViewCell>
+    </objects>
+</document>

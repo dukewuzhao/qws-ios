@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iwu-5d-yYY" customClass="G100VerificationCodeView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" allowsEditingTextAttributes="YES" placeholder="  请输入验证码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L4W-S5-cPy">
+                    <rect key="frame" x="39" y="0.0" width="158" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="F7y-rV-e9H"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="join" enablesReturnKeyAutomatically="YES"/>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_vericode" translatesAutoresizingMaskIntoConstraints="NO" id="6Us-Eo-JFg">
+                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="V6L-3m-OWA"/>
+                        <constraint firstAttribute="width" constant="40" id="fBX-FN-h6u"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_loading" translatesAutoresizingMaskIntoConstraints="NO" id="j1y-bY-lim">
+                    <rect key="frame" x="201" y="0.0" width="80" height="40"/>
+                    <color key="backgroundColor" red="0.9882352941176471" green="1" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="6fP-TL-1qc"/>
+                        <constraint firstAttribute="width" secondItem="j1y-bY-lim" secondAttribute="height" multiplier="80:40" id="Gwd-qn-EEq"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hga-8Z-fui">
+                    <rect key="frame" x="280" y="0.0" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="3d8-mR-owq"/>
+                        <constraint firstAttribute="width" constant="40" id="5iR-8O-dEY"/>
+                    </constraints>
+                    <state key="normal" image="ic_refresh-up"/>
+                    <state key="disabled" image="ic_refresh-down"/>
+                    <state key="highlighted" image="ic_refresh-down"/>
+                    <connections>
+                        <action selector="refreshVerCode:" destination="iwu-5d-yYY" eventType="touchUpInside" id="6Th-8T-kEM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Hga-8Z-fui" firstAttribute="leading" secondItem="j1y-bY-lim" secondAttribute="trailing" constant="-1" id="02q-Yc-eqP"/>
+                <constraint firstItem="L4W-S5-cPy" firstAttribute="leading" secondItem="6Us-Eo-JFg" secondAttribute="trailing" constant="-1" id="3dy-xb-qBk"/>
+                <constraint firstItem="j1y-bY-lim" firstAttribute="centerY" secondItem="iwu-5d-yYY" secondAttribute="centerY" id="6Mm-KW-TM4"/>
+                <constraint firstItem="6Us-Eo-JFg" firstAttribute="leading" secondItem="iwu-5d-yYY" secondAttribute="leading" id="P7N-4v-VwZ"/>
+                <constraint firstAttribute="trailing" secondItem="Hga-8Z-fui" secondAttribute="trailing" id="gTm-WJ-3Ml"/>
+                <constraint firstItem="j1y-bY-lim" firstAttribute="leading" secondItem="L4W-S5-cPy" secondAttribute="trailing" constant="4" id="n8r-eW-t7T"/>
+                <constraint firstItem="6Us-Eo-JFg" firstAttribute="centerY" secondItem="iwu-5d-yYY" secondAttribute="centerY" id="pkk-a7-ONV"/>
+                <constraint firstItem="Hga-8Z-fui" firstAttribute="centerY" secondItem="iwu-5d-yYY" secondAttribute="centerY" id="qEw-wA-ERE"/>
+                <constraint firstItem="L4W-S5-cPy" firstAttribute="centerY" secondItem="iwu-5d-yYY" secondAttribute="centerY" id="xCv-pT-OVt"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="codeRefreshBtn" destination="Hga-8Z-fui" id="7xV-QZ-NBM"/>
+                <outlet property="verCodeImageView" destination="j1y-bY-lim" id="gh7-Bf-pZi"/>
+                <outlet property="verCodeTF" destination="L4W-S5-cPy" id="Dm7-ak-KYd"/>
+            </connections>
+            <point key="canvasLocation" x="240" y="345"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_loading" width="80" height="40"/>
+        <image name="ic_refresh-down" width="40" height="40"/>
+        <image name="ic_refresh-up" width="40" height="40"/>
+        <image name="ic_vericode" width="40" height="40"/>
+    </resources>
+</document>

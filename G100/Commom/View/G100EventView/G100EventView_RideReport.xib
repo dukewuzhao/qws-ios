@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Pvc-5P-xO5" customClass="G100EventView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="POPUP" translatesAutoresizingMaskIntoConstraints="NO" id="8wZ-IL-oyC">
+                    <rect key="frame" x="42.5" y="158" width="290" height="315"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="8wZ-IL-oyC" secondAttribute="height" multiplier="80:87" id="eyh-EN-F1k"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djm-da-3gj">
+                    <rect key="frame" x="130.5" y="369" width="114" height="35.5"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="djm-da-3gj" secondAttribute="height" multiplier="42:13" id="gKe-V7-dCf"/>
+                    </constraints>
+                    <connections>
+                        <action selector="getEventDetail:" destination="Pvc-5P-xO5" eventType="touchUpInside" id="bb4-W9-HVs"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwd-fc-G8v">
+                    <rect key="frame" x="263" y="220.5" width="36.5" height="36"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="hwd-fc-G8v" secondAttribute="height" multiplier="1:1" id="bwh-VF-2FY"/>
+                    </constraints>
+                    <connections>
+                        <action selector="dismissEventView:" destination="Pvc-5P-xO5" eventType="touchUpInside" id="K3l-wa-Wbo"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rkv-Q2-GRF">
+                    <rect key="frame" x="42.5" y="404.5" width="290" height="68.5"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="29v-ni-bIm">
+                    <rect key="frame" x="42.5" y="256.5" width="290" height="112.5"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5U3-Qy-wHk">
+                    <rect key="frame" x="112" y="158" width="151" height="98.5"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.6045713682432432" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5U3-Qy-wHk" firstAttribute="top" secondItem="8wZ-IL-oyC" secondAttribute="top" id="4YX-US-qC6"/>
+                <constraint firstItem="rkv-Q2-GRF" firstAttribute="trailing" secondItem="8wZ-IL-oyC" secondAttribute="trailing" id="5xv-Mk-IZV"/>
+                <constraint firstItem="29v-ni-bIm" firstAttribute="height" secondItem="8wZ-IL-oyC" secondAttribute="height" multiplier="124:348" id="6vA-Uz-z29"/>
+                <constraint firstItem="djm-da-3gj" firstAttribute="top" secondItem="29v-ni-bIm" secondAttribute="bottom" id="7x1-RT-GoG"/>
+                <constraint firstItem="djm-da-3gj" firstAttribute="centerX" secondItem="Pvc-5P-xO5" secondAttribute="centerX" id="Bo2-1F-bxM"/>
+                <constraint firstItem="29v-ni-bIm" firstAttribute="trailing" secondItem="8wZ-IL-oyC" secondAttribute="trailing" id="K6n-u1-TT4"/>
+                <constraint firstItem="hwd-fc-G8v" firstAttribute="width" secondItem="8wZ-IL-oyC" secondAttribute="width" multiplier="40:320" id="Pi0-li-vdj"/>
+                <constraint firstItem="29v-ni-bIm" firstAttribute="top" secondItem="hwd-fc-G8v" secondAttribute="bottom" id="Ygy-QS-4Uw"/>
+                <constraint firstItem="rkv-Q2-GRF" firstAttribute="top" secondItem="djm-da-3gj" secondAttribute="bottom" id="ZOc-t7-jmv"/>
+                <constraint firstItem="rkv-Q2-GRF" firstAttribute="leading" secondItem="8wZ-IL-oyC" secondAttribute="leading" id="cFz-qA-NJt"/>
+                <constraint firstItem="hwd-fc-G8v" firstAttribute="leading" secondItem="5U3-Qy-wHk" secondAttribute="trailing" id="dME-UW-UwV"/>
+                <constraint firstItem="rkv-Q2-GRF" firstAttribute="bottom" secondItem="8wZ-IL-oyC" secondAttribute="bottom" id="iov-bd-zAw"/>
+                <constraint firstItem="8wZ-IL-oyC" firstAttribute="centerX" secondItem="Pvc-5P-xO5" secondAttribute="centerX" id="lZx-6j-hUn"/>
+                <constraint firstItem="rkv-Q2-GRF" firstAttribute="height" secondItem="8wZ-IL-oyC" secondAttribute="height" multiplier="76:348" id="m46-3b-qjk"/>
+                <constraint firstItem="djm-da-3gj" firstAttribute="width" secondItem="8wZ-IL-oyC" secondAttribute="width" multiplier="126:320" id="meH-wT-TUH"/>
+                <constraint firstItem="29v-ni-bIm" firstAttribute="leading" secondItem="8wZ-IL-oyC" secondAttribute="leading" id="oqw-S7-7qN"/>
+                <constraint firstItem="29v-ni-bIm" firstAttribute="top" secondItem="5U3-Qy-wHk" secondAttribute="bottom" id="p0H-DK-3dj"/>
+                <constraint firstItem="5U3-Qy-wHk" firstAttribute="width" secondItem="8wZ-IL-oyC" secondAttribute="width" multiplier="167:320" id="sCb-07-5SK"/>
+                <constraint firstItem="8wZ-IL-oyC" firstAttribute="width" secondItem="Pvc-5P-xO5" secondAttribute="width" multiplier="320:414" id="vmU-UI-eQ4"/>
+                <constraint firstItem="5U3-Qy-wHk" firstAttribute="centerX" secondItem="Pvc-5P-xO5" secondAttribute="centerX" id="xoH-cg-mt2"/>
+                <constraint firstItem="8wZ-IL-oyC" firstAttribute="centerY" secondItem="Pvc-5P-xO5" secondAttribute="centerY" constant="-18" id="ziU-p7-ZIQ"/>
+            </constraints>
+            <connections>
+                <outlet property="eventImageView" destination="8wZ-IL-oyC" id="DFq-sc-nsm"/>
+            </connections>
+            <point key="canvasLocation" x="347" y="386"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="POPUP" width="320" height="347"/>
+    </resources>
+</document>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BSWSwitchView">
+            <rect key="frame" x="0.0" y="0.0" width="122" height="47"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_findcar_his_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Uu3-bP-zgy">
+                    <rect key="frame" x="0.0" y="0.0" width="122" height="47"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="历史路径" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18B-wX-xW7">
+                    <rect key="frame" x="39" y="6" width="44" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="gpg-hF-gmu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N天前" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cO9-ki-qJo">
+                    <rect key="frame" x="39" y="25" width="44" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="fUu-l3-72d"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHy-Kt-c12">
+                    <rect key="frame" x="0.0" y="0.0" width="27" height="47"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="27" id="Mya-jB-AeV"/>
+                    </constraints>
+                    <state key="selected" backgroundImage="ic_findcar_his_left_down"/>
+                    <state key="highlighted" backgroundImage="ic_findcar_his_left_down"/>
+                    <connections>
+                        <action selector="buttonclick:" destination="iN0-l3-epB" eventType="touchUpInside" id="wY4-XT-7M7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BXD-xY-xwG">
+                    <rect key="frame" x="95" y="0.0" width="27" height="47"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="27" id="Oj9-s3-dw6"/>
+                    </constraints>
+                    <state key="selected" backgroundImage="ic_findcar_his_right_down"/>
+                    <state key="highlighted" backgroundImage="ic_findcar_his_right_down"/>
+                    <connections>
+                        <action selector="buttonclick:" destination="iN0-l3-epB" eventType="touchUpInside" id="7mQ-py-ejg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="NHy-Kt-c12" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0bq-FU-iEr"/>
+                <constraint firstAttribute="trailing" secondItem="Uu3-bP-zgy" secondAttribute="trailing" id="1dH-dS-pNf"/>
+                <constraint firstItem="Uu3-bP-zgy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4Qz-pE-3Fx"/>
+                <constraint firstAttribute="bottom" secondItem="BXD-xY-xwG" secondAttribute="bottom" id="683-rt-LAT"/>
+                <constraint firstAttribute="bottom" secondItem="cO9-ki-qJo" secondAttribute="bottom" constant="6" id="6mX-pa-yQ5"/>
+                <constraint firstAttribute="bottom" secondItem="NHy-Kt-c12" secondAttribute="bottom" id="9FO-Lb-F7S"/>
+                <constraint firstItem="18B-wX-xW7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="6" id="FB0-sj-Qkb"/>
+                <constraint firstItem="cO9-ki-qJo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="NHy-Kt-c12" secondAttribute="trailing" constant="2" id="GOT-FB-X3p"/>
+                <constraint firstAttribute="trailing" secondItem="BXD-xY-xwG" secondAttribute="trailing" id="HnK-Kc-6pB"/>
+                <constraint firstItem="18B-wX-xW7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="OMf-Z6-gfb"/>
+                <constraint firstItem="cO9-ki-qJo" firstAttribute="centerX" secondItem="18B-wX-xW7" secondAttribute="centerX" id="U4F-nl-qY8"/>
+                <constraint firstItem="18B-wX-xW7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="NHy-Kt-c12" secondAttribute="trailing" constant="2" id="lRi-Rw-e10"/>
+                <constraint firstItem="Uu3-bP-zgy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qGy-bq-HB5"/>
+                <constraint firstItem="NHy-Kt-c12" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vZM-GJ-JrI"/>
+                <constraint firstAttribute="bottom" secondItem="Uu3-bP-zgy" secondAttribute="bottom" id="vnV-Gb-KhN"/>
+                <constraint firstItem="BXD-xY-xwG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zoG-vg-RAH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="contentLabel" destination="cO9-ki-qJo" id="JoZ-D4-DNx"/>
+                <outlet property="leftButton" destination="NHy-Kt-c12" id="rs8-BI-m14"/>
+                <outlet property="rightButton" destination="BXD-xY-xwG" id="Hib-3e-kaA"/>
+                <outlet property="titleLabel" destination="18B-wX-xW7" id="kAI-iY-nhd"/>
+            </connections>
+            <point key="canvasLocation" x="280" y="231.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_findcar_his_bg" width="120" height="46"/>
+        <image name="ic_findcar_his_left_down" width="26" height="46"/>
+        <image name="ic_findcar_his_right_down" width="26" height="46"/>
+    </resources>
+</document>

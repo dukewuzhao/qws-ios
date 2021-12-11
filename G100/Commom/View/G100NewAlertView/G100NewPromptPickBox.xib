@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qvd-jV-vpX" customClass="G100NewPromptPickBox">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r5J-aa-GKA">
+                    <rect key="frame" x="20" y="168" width="280" height="232"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="内容文字" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4L-Sv-GAk">
+                            <rect key="frame" x="12" y="12" width="256" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view tag="2" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rg2-4O-fD5" customClass="G100AlertCancelClickView">
+                            <rect key="frame" x="12" y="184" width="256" height="40"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="8Mn-wd-krr"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sec-l7-Fdz" customClass="G100AlertConfirmClickView">
+                            <rect key="frame" x="12" y="136" width="256" height="40"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="7eB-cH-DZA"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dwc-d3-KaH">
+                            <rect key="frame" x="12" y="38" width="256" height="90"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psS-ie-9Q0">
+                                    <rect key="frame" x="72" y="8" width="112" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="112" id="DVE-GK-blE"/>
+                                        <constraint firstAttribute="height" constant="22" id="fXn-An-WBg"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="App报警通知" image="ic_login_remeber_normal">
+                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" image="ic_login_remeber_selected"/>
+                                    <connections>
+                                        <action selector="pickTestMode:" destination="qvd-jV-vpX" eventType="touchUpInside" id="2VD-zx-3nj"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Isp-fR-9oQ">
+                                    <rect key="frame" x="72" y="34" width="112" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="AHs-Gz-qze"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="微信报警通知" image="ic_login_remeber_normal">
+                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" image="ic_login_remeber_selected"/>
+                                    <connections>
+                                        <action selector="pickTestMode:" destination="qvd-jV-vpX" eventType="touchUpInside" id="a7A-NJ-4cv"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MjC-3Y-XYG">
+                                    <rect key="frame" x="72" y="60" width="112" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="DET-JG-dRS"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="电话报警通知" image="ic_login_remeber_normal">
+                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" image="ic_login_remeber_selected"/>
+                                    <connections>
+                                        <action selector="pickTestMode:" destination="qvd-jV-vpX" eventType="touchUpInside" id="m0e-bc-WaN"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="MjC-3Y-XYG" firstAttribute="top" secondItem="Isp-fR-9oQ" secondAttribute="bottom" constant="4" id="Bab-NU-Ckf"/>
+                                <constraint firstItem="Isp-fR-9oQ" firstAttribute="centerX" secondItem="dwc-d3-KaH" secondAttribute="centerX" id="CHx-u6-te6"/>
+                                <constraint firstItem="Isp-fR-9oQ" firstAttribute="width" secondItem="psS-ie-9Q0" secondAttribute="width" id="Cht-Ny-b8x"/>
+                                <constraint firstItem="MjC-3Y-XYG" firstAttribute="centerX" secondItem="dwc-d3-KaH" secondAttribute="centerX" id="RjA-R2-wnF"/>
+                                <constraint firstItem="Isp-fR-9oQ" firstAttribute="top" secondItem="psS-ie-9Q0" secondAttribute="bottom" constant="4" id="WVh-cT-YLq"/>
+                                <constraint firstItem="MjC-3Y-XYG" firstAttribute="width" secondItem="psS-ie-9Q0" secondAttribute="width" id="ahU-Fq-eYL"/>
+                                <constraint firstAttribute="bottom" secondItem="MjC-3Y-XYG" secondAttribute="bottom" constant="8" id="e2V-XA-3QS"/>
+                                <constraint firstItem="psS-ie-9Q0" firstAttribute="centerX" secondItem="dwc-d3-KaH" secondAttribute="centerX" id="g6u-3T-M9m"/>
+                                <constraint firstItem="psS-ie-9Q0" firstAttribute="top" secondItem="dwc-d3-KaH" secondAttribute="top" constant="8" id="uUG-5m-sUh"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Sec-l7-Fdz" firstAttribute="leading" secondItem="h4L-Sv-GAk" secondAttribute="leading" id="Dg2-Bg-R6U"/>
+                        <constraint firstItem="rg2-4O-fD5" firstAttribute="trailing" secondItem="h4L-Sv-GAk" secondAttribute="trailing" id="L7K-3x-f9b"/>
+                        <constraint firstAttribute="trailing" secondItem="h4L-Sv-GAk" secondAttribute="trailing" constant="12" id="OqO-yA-H9M"/>
+                        <constraint firstItem="Sec-l7-Fdz" firstAttribute="top" secondItem="dwc-d3-KaH" secondAttribute="bottom" constant="8" id="SO6-Zl-FEN"/>
+                        <constraint firstItem="h4L-Sv-GAk" firstAttribute="leading" secondItem="r5J-aa-GKA" secondAttribute="leading" constant="12" id="Thw-Z0-U4g"/>
+                        <constraint firstItem="dwc-d3-KaH" firstAttribute="top" secondItem="h4L-Sv-GAk" secondAttribute="bottom" constant="8" id="d7z-JU-Msc"/>
+                        <constraint firstItem="dwc-d3-KaH" firstAttribute="leading" secondItem="h4L-Sv-GAk" secondAttribute="leading" id="dID-hI-Jv9"/>
+                        <constraint firstItem="dwc-d3-KaH" firstAttribute="trailing" secondItem="h4L-Sv-GAk" secondAttribute="trailing" id="g82-j5-3Jd"/>
+                        <constraint firstItem="rg2-4O-fD5" firstAttribute="leading" secondItem="h4L-Sv-GAk" secondAttribute="leading" id="i3v-Df-YEd"/>
+                        <constraint firstItem="h4L-Sv-GAk" firstAttribute="top" secondItem="r5J-aa-GKA" secondAttribute="top" constant="12" id="nJ0-ee-vVN"/>
+                        <constraint firstItem="rg2-4O-fD5" firstAttribute="top" secondItem="Sec-l7-Fdz" secondAttribute="bottom" constant="8" id="p1U-Fm-8tN"/>
+                        <constraint firstAttribute="bottom" secondItem="rg2-4O-fD5" secondAttribute="bottom" constant="8" id="rST-Ff-E8G"/>
+                        <constraint firstItem="Sec-l7-Fdz" firstAttribute="trailing" secondItem="h4L-Sv-GAk" secondAttribute="trailing" id="uM4-Af-wCF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.21191233396530151" green="0.21190600097179413" blue="0.21190959215164185" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="r5J-aa-GKA" secondAttribute="trailing" constant="20" id="EBe-Ke-uZm"/>
+                <constraint firstItem="r5J-aa-GKA" firstAttribute="centerY" secondItem="qvd-jV-vpX" secondAttribute="centerY" id="OSS-MT-C38"/>
+                <constraint firstItem="r5J-aa-GKA" firstAttribute="centerX" secondItem="qvd-jV-vpX" secondAttribute="centerX" id="aaD-wi-AI6"/>
+                <constraint firstItem="r5J-aa-GKA" firstAttribute="leading" secondItem="qvd-jV-vpX" secondAttribute="leading" constant="20" id="eRx-YN-faM"/>
+            </constraints>
+            <connections>
+                <outlet property="boxView" destination="r5J-aa-GKA" id="JeM-8t-Kg6"/>
+                <outlet property="cancelClickView" destination="rg2-4O-fD5" id="rBK-m4-FZ2"/>
+                <outlet property="confirmClickView" destination="Sec-l7-Fdz" id="Xpl-h3-Ozn"/>
+                <outlet property="contentLabel" destination="h4L-Sv-GAk" id="IUZ-6k-fAv"/>
+                <outletCollection property="pickButtons" destination="psS-ie-9Q0" id="5D6-Wh-Rx9"/>
+                <outletCollection property="pickButtons" destination="Isp-fR-9oQ" id="vm1-CK-aZg"/>
+                <outletCollection property="pickButtons" destination="MjC-3Y-XYG" id="jtw-U1-Ueo"/>
+            </connections>
+            <point key="canvasLocation" x="199" y="366"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_login_remeber_normal" width="22" height="22"/>
+        <image name="ic_login_remeber_selected" width="22" height="22"/>
+    </resources>
+</document>

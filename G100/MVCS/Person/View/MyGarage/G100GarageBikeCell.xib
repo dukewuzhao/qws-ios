@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="115" id="KGk-i7-Jjw" customClass="G100GarageBikeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="179.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bike_defaultnew" translatesAutoresizingMaskIntoConstraints="NO" id="Tcn-3s-6VD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="179.5"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_garage_bike_cover" translatesAutoresizingMaskIntoConstraints="NO" id="JvZ-IN-yEK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="179.5"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_garage_bike_black" translatesAutoresizingMaskIntoConstraints="NO" id="P4g-nQ-Bsk">
+                        <rect key="frame" x="0.0" y="99.5" width="320" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="Wf5-Ip-ttB"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="骑卫士电动车" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EE0-bw-9R8">
+                        <rect key="frame" x="24" y="104.5" width="98" height="20"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_car_usermain" translatesAutoresizingMaskIntoConstraints="NO" id="eqa-CP-tRu">
+                        <rect key="frame" x="124" y="103.5" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="aFK-xR-1xZ"/>
+                            <constraint firstAttribute="width" constant="20" id="deE-X0-yZE"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="g100_main_left_logo" translatesAutoresizingMaskIntoConstraints="NO" id="4Fp-es-Jd8">
+                        <rect key="frame" x="21" y="11" width="90" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="H7W-04-ALV"/>
+                            <constraint firstAttribute="width" constant="90" id="i23-nZ-gs2"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uZu-Ln-qrv" customClass="G100GarageBikeBottomView">
+                        <rect key="frame" x="0.0" y="134.5" width="80" height="37"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37" id="Sbe-uo-hq7"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lR0-vh-04a" customClass="G100GarageBikeBottomView">
+                        <rect key="frame" x="80" y="134.5" width="80" height="37"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bve-RJ-ypP" customClass="G100GarageBikeBottomView">
+                        <rect key="frame" x="160" y="134.5" width="80" height="37"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SnA-Yy-4Pb" customClass="G100GarageBikeBottomView">
+                        <rect key="frame" x="240" y="134.5" width="80" height="37"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Bve-RJ-ypP" firstAttribute="width" secondItem="uZu-Ln-qrv" secondAttribute="width" id="0eE-iS-mHM"/>
+                    <constraint firstItem="SnA-Yy-4Pb" firstAttribute="height" secondItem="uZu-Ln-qrv" secondAttribute="height" id="0oc-Km-Jeh"/>
+                    <constraint firstItem="Bve-RJ-ypP" firstAttribute="height" secondItem="uZu-Ln-qrv" secondAttribute="height" id="45G-zs-Mtt"/>
+                    <constraint firstItem="SnA-Yy-4Pb" firstAttribute="leading" secondItem="Bve-RJ-ypP" secondAttribute="trailing" id="4ye-O6-WcD"/>
+                    <constraint firstAttribute="trailing" secondItem="JvZ-IN-yEK" secondAttribute="trailing" id="BJN-5D-HZM"/>
+                    <constraint firstAttribute="bottom" secondItem="Tcn-3s-6VD" secondAttribute="bottom" id="CB3-hf-Iqg"/>
+                    <constraint firstItem="JvZ-IN-yEK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Kos-fa-K9a"/>
+                    <constraint firstAttribute="bottom" secondItem="lR0-vh-04a" secondAttribute="bottom" constant="8" id="Ldq-C6-BdV"/>
+                    <constraint firstItem="eqa-CP-tRu" firstAttribute="leading" secondItem="EE0-bw-9R8" secondAttribute="trailing" constant="2" id="M5H-QY-drf"/>
+                    <constraint firstAttribute="bottom" secondItem="uZu-Ln-qrv" secondAttribute="bottom" constant="8" id="MQ1-lp-95a"/>
+                    <constraint firstItem="Bve-RJ-ypP" firstAttribute="leading" secondItem="lR0-vh-04a" secondAttribute="trailing" id="TCr-vP-Dsv"/>
+                    <constraint firstItem="lR0-vh-04a" firstAttribute="height" secondItem="uZu-Ln-qrv" secondAttribute="height" id="WLk-7d-M6K"/>
+                    <constraint firstAttribute="trailing" secondItem="P4g-nQ-Bsk" secondAttribute="trailing" id="bWo-Yi-Nvn"/>
+                    <constraint firstAttribute="trailing" secondItem="SnA-Yy-4Pb" secondAttribute="trailing" id="cIc-fC-5TO"/>
+                    <constraint firstItem="lR0-vh-04a" firstAttribute="leading" secondItem="uZu-Ln-qrv" secondAttribute="trailing" id="cmm-d9-yjK"/>
+                    <constraint firstItem="JvZ-IN-yEK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="dM5-ap-t16"/>
+                    <constraint firstAttribute="bottom" secondItem="JvZ-IN-yEK" secondAttribute="bottom" id="e5A-5W-gS9"/>
+                    <constraint firstAttribute="bottom" secondItem="SnA-Yy-4Pb" secondAttribute="bottom" constant="8" id="fdR-WP-N8M"/>
+                    <constraint firstItem="4Fp-es-Jd8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="fvX-pU-TB3"/>
+                    <constraint firstAttribute="trailing" secondItem="Tcn-3s-6VD" secondAttribute="trailing" id="g1h-m5-XkZ"/>
+                    <constraint firstItem="lR0-vh-04a" firstAttribute="width" secondItem="uZu-Ln-qrv" secondAttribute="width" id="h22-6Y-fME"/>
+                    <constraint firstAttribute="bottom" secondItem="Bve-RJ-ypP" secondAttribute="bottom" constant="8" id="hw1-ig-Jmt"/>
+                    <constraint firstItem="Tcn-3s-6VD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="i6i-hI-sK6"/>
+                    <constraint firstItem="SnA-Yy-4Pb" firstAttribute="width" secondItem="uZu-Ln-qrv" secondAttribute="width" id="jSm-E6-DMW"/>
+                    <constraint firstItem="Tcn-3s-6VD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="kbH-uH-9vA"/>
+                    <constraint firstItem="uZu-Ln-qrv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lM8-Jl-7Ib"/>
+                    <constraint firstItem="P4g-nQ-Bsk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="nkF-9y-jaR"/>
+                    <constraint firstItem="4Fp-es-Jd8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="r6N-zl-HJr"/>
+                    <constraint firstItem="eqa-CP-tRu" firstAttribute="centerY" secondItem="EE0-bw-9R8" secondAttribute="centerY" constant="-1" id="rEa-cA-T6X"/>
+                    <constraint firstItem="lR0-vh-04a" firstAttribute="top" secondItem="EE0-bw-9R8" secondAttribute="bottom" constant="10" id="tEb-ZC-i9B"/>
+                    <constraint firstAttribute="bottom" secondItem="P4g-nQ-Bsk" secondAttribute="bottom" id="tNC-im-7RF"/>
+                    <constraint firstItem="EE0-bw-9R8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="zlZ-ha-srQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgImageView" destination="Tcn-3s-6VD" id="taF-Ru-0ao"/>
+                <outlet property="bikeNameLabel" destination="EE0-bw-9R8" id="zWM-id-hLn"/>
+                <outlet property="brandImageView" destination="4Fp-es-Jd8" id="wGO-hr-KoK"/>
+                <outlet property="firstView" destination="uZu-Ln-qrv" id="MqK-VC-oHG"/>
+                <outlet property="fourthView" destination="SnA-Yy-4Pb" id="cM1-iU-1xg"/>
+                <outlet property="logoWidthConstraint" destination="i23-nZ-gs2" id="IWu-T2-esW"/>
+                <outlet property="master_flag" destination="eqa-CP-tRu" id="Dda-Lo-VhU"/>
+                <outlet property="secondView" destination="lR0-vh-04a" id="iNr-Or-ehI"/>
+                <outlet property="thirdView" destination="Bve-RJ-ypP" id="27l-zf-x8u"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="85"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="g100_main_left_logo" width="90" height="36"/>
+        <image name="ic_bike_defaultnew" width="409" height="158"/>
+        <image name="ic_garage_bike_black" width="409" height="79"/>
+        <image name="ic_garage_bike_cover" width="409" height="178"/>
+        <image name="icon_car_usermain" width="19" height="19"/>
+    </resources>
+</document>

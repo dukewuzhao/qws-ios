@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="G100GPSCardView">
+            <rect key="frame" x="0.0" y="0.0" width="394" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wnm-ND-hso">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="hZw-4l-cub" appends="YES" id="50T-5T-5eZ"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NOL-0b-pMn">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="nW2-fg-b6R" appends="YES" id="gmy-bT-TDf"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yll-BQ-HHc">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="llf-nN-tgo" appends="YES" id="hGI-Bw-HVM"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Yll-BQ-HHc" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="3:16" id="3yH-4R-51P"/>
+                <constraint firstItem="wnm-ND-hso" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9hB-lS-B0u"/>
+                <constraint firstAttribute="bottom" secondItem="Yll-BQ-HHc" secondAttribute="bottom" id="AE6-ED-tWZ"/>
+                <constraint firstAttribute="trailing" secondItem="NOL-0b-pMn" secondAttribute="trailing" id="B18-gY-I8v"/>
+                <constraint firstAttribute="trailing" secondItem="Yll-BQ-HHc" secondAttribute="trailing" id="Lil-0C-owc"/>
+                <constraint firstItem="NOL-0b-pMn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LxK-vW-mpn"/>
+                <constraint firstAttribute="trailing" secondItem="wnm-ND-hso" secondAttribute="trailing" id="SjO-1H-zVO"/>
+                <constraint firstItem="Yll-BQ-HHc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="T9n-hT-DO1"/>
+                <constraint firstItem="wnm-ND-hso" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WkP-cs-lwz"/>
+                <constraint firstItem="NOL-0b-pMn" firstAttribute="top" secondItem="wnm-ND-hso" secondAttribute="bottom" id="s83-HK-PB4"/>
+                <constraint firstItem="wnm-ND-hso" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="5:8" id="s8Q-0H-Ash"/>
+                <constraint firstItem="Yll-BQ-HHc" firstAttribute="top" secondItem="NOL-0b-pMn" secondAttribute="bottom" id="vfX-kR-DLQ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bottomView" destination="Yll-BQ-HHc" id="Fkl-oq-u2G"/>
+                <outlet property="mapGesture" destination="hZw-4l-cub" id="MEb-9Z-5sn"/>
+                <outlet property="middleView" destination="NOL-0b-pMn" id="V9U-yw-4Vk"/>
+                <outlet property="reportGesture" destination="llf-nN-tgo" id="z49-5w-zeZ"/>
+                <outlet property="safeGesture" destination="nW2-fg-b6R" id="Ved-uU-5ht"/>
+                <outlet property="topView" destination="wnm-ND-hso" id="VGg-4u-ebI"/>
+            </connections>
+            <point key="canvasLocation" x="-24" y="-371"/>
+        </view>
+        <tapGestureRecognizer id="hZw-4l-cub">
+            <connections>
+                <action selector="tapGestureClick:" destination="iN0-l3-epB" id="FWK-gI-xo3"/>
+                <outlet property="delegate" destination="iN0-l3-epB" id="bEl-Gk-5bo"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="nW2-fg-b6R">
+            <connections>
+                <action selector="tapGestureClick:" destination="iN0-l3-epB" id="SfC-n8-vVR"/>
+                <outlet property="delegate" destination="iN0-l3-epB" id="kHt-ke-wBA"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="llf-nN-tgo">
+            <connections>
+                <action selector="tapGestureClick:" destination="iN0-l3-epB" id="qew-mG-oC3"/>
+                <outlet property="delegate" destination="iN0-l3-epB" id="hDc-JI-ftG"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

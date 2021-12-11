@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Pvc-5P-xO5" customClass="G100EventView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m4D-31-8kN">
+                    <rect key="frame" x="47" y="179.33333333333334" width="320" height="337.33333333333326"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poster_bg_battery" translatesAutoresizingMaskIntoConstraints="NO" id="8wZ-IL-oyC">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="337.33333333333331"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U5d-Ca-LhZ">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="337.33333333333331"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Exl-If-3at">
+                                    <rect key="frame" x="0.0" y="263.66666666666663" width="320" height="73.666666666666686"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="赶紧去填写车辆电池信息~" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFQ-iY-rSk">
+                                    <rect key="frame" x="62.333333333333329" y="191.66666666666666" width="195.66666666666669" height="24"/>
+                                    <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有助于琪琪更好管理" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aS-WY-sd6">
+                                    <rect key="frame" x="83.666666666666657" y="215.66666666666666" width="153" height="24"/>
+                                    <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您的爱车哦！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybM-If-0Ic">
+                                    <rect key="frame" x="109" y="239.66666666666666" width="102" height="23.999999999999972"/>
+                                    <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Exl-If-3at" secondAttribute="trailing" id="Cf2-vU-5C9"/>
+                                <constraint firstItem="Exl-If-3at" firstAttribute="leading" secondItem="U5d-Ca-LhZ" secondAttribute="leading" id="Moy-jv-a6v"/>
+                                <constraint firstItem="ybM-If-0Ic" firstAttribute="centerX" secondItem="U5d-Ca-LhZ" secondAttribute="centerX" id="T6i-gB-v32"/>
+                                <constraint firstItem="Exl-If-3at" firstAttribute="top" secondItem="ybM-If-0Ic" secondAttribute="bottom" id="d4a-jd-t57"/>
+                                <constraint firstItem="8aS-WY-sd6" firstAttribute="centerX" secondItem="U5d-Ca-LhZ" secondAttribute="centerX" id="dgI-G4-72D"/>
+                                <constraint firstItem="8aS-WY-sd6" firstAttribute="top" secondItem="UFQ-iY-rSk" secondAttribute="bottom" id="eUa-30-E0B"/>
+                                <constraint firstItem="Exl-If-3at" firstAttribute="height" secondItem="U5d-Ca-LhZ" secondAttribute="height" multiplier="240:1102" id="h8K-KD-8uR"/>
+                                <constraint firstAttribute="bottom" secondItem="Exl-If-3at" secondAttribute="bottom" id="mzv-83-I14"/>
+                                <constraint firstItem="UFQ-iY-rSk" firstAttribute="centerX" secondItem="U5d-Ca-LhZ" secondAttribute="centerX" id="p4k-4b-hdZ"/>
+                                <constraint firstItem="ybM-If-0Ic" firstAttribute="top" secondItem="8aS-WY-sd6" secondAttribute="bottom" id="rEn-ff-3v5"/>
+                                <constraint firstItem="8aS-WY-sd6" firstAttribute="centerX" secondItem="U5d-Ca-LhZ" secondAttribute="centerX" id="xL3-eI-Szm"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16C-mU-OYb" userLabel="Action">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="337.33333333333331"/>
+                            <connections>
+                                <action selector="getEventDetail:" destination="Pvc-5P-xO5" eventType="touchUpInside" id="uFG-8N-xmB"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="8wZ-IL-oyC" firstAttribute="leading" secondItem="m4D-31-8kN" secondAttribute="leading" id="9T0-Tp-Gzi"/>
+                        <constraint firstAttribute="trailing" secondItem="8wZ-IL-oyC" secondAttribute="trailing" id="Igr-n9-5qC"/>
+                        <constraint firstItem="16C-mU-OYb" firstAttribute="leading" secondItem="8wZ-IL-oyC" secondAttribute="leading" id="JV8-St-By9"/>
+                        <constraint firstItem="16C-mU-OYb" firstAttribute="top" secondItem="8wZ-IL-oyC" secondAttribute="top" id="Kwz-Fa-GBD"/>
+                        <constraint firstItem="16C-mU-OYb" firstAttribute="bottom" secondItem="8wZ-IL-oyC" secondAttribute="bottom" id="W7G-XZ-lda"/>
+                        <constraint firstItem="8wZ-IL-oyC" firstAttribute="top" secondItem="m4D-31-8kN" secondAttribute="top" id="cpU-vA-pLi"/>
+                        <constraint firstAttribute="trailing" secondItem="U5d-Ca-LhZ" secondAttribute="trailing" id="e3D-Bl-qSK"/>
+                        <constraint firstAttribute="width" secondItem="m4D-31-8kN" secondAttribute="height" multiplier="1046:1102" id="frF-oj-6kG"/>
+                        <constraint firstItem="U5d-Ca-LhZ" firstAttribute="leading" secondItem="m4D-31-8kN" secondAttribute="leading" id="hjR-dS-VCm"/>
+                        <constraint firstAttribute="bottom" secondItem="U5d-Ca-LhZ" secondAttribute="bottom" id="mWe-el-xLm"/>
+                        <constraint firstItem="U5d-Ca-LhZ" firstAttribute="top" secondItem="m4D-31-8kN" secondAttribute="top" id="mla-e7-zQD"/>
+                        <constraint firstAttribute="bottom" secondItem="8wZ-IL-oyC" secondAttribute="bottom" id="sOs-pd-2mq"/>
+                        <constraint firstItem="16C-mU-OYb" firstAttribute="trailing" secondItem="8wZ-IL-oyC" secondAttribute="trailing" id="vKo-dY-D2h"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwd-fc-G8v" userLabel="Close">
+                    <rect key="frame" x="192" y="544.66666666666663" width="30" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="RKg-zK-cYT"/>
+                        <constraint firstAttribute="height" constant="30" id="t1g-MC-GHq"/>
+                    </constraints>
+                    <state key="normal" image="poster_close"/>
+                    <connections>
+                        <action selector="dismissEventView:" destination="Pvc-5P-xO5" eventType="touchUpInside" id="K3l-wa-Wbo"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hwd-fc-G8v" firstAttribute="top" secondItem="m4D-31-8kN" secondAttribute="bottom" constant="28" id="7OT-RG-u7v"/>
+                <constraint firstItem="m4D-31-8kN" firstAttribute="centerY" secondItem="Pvc-5P-xO5" secondAttribute="centerY" constant="-20" id="PUQ-Tx-SW3"/>
+                <constraint firstItem="hwd-fc-G8v" firstAttribute="centerX" secondItem="Pvc-5P-xO5" secondAttribute="centerX" id="rjL-IH-dkW"/>
+                <constraint firstItem="m4D-31-8kN" firstAttribute="centerX" secondItem="Pvc-5P-xO5" secondAttribute="centerX" id="upj-ga-Hn3"/>
+                <constraint firstItem="m4D-31-8kN" firstAttribute="width" secondItem="Pvc-5P-xO5" secondAttribute="width" multiplier="320:414" id="vfS-to-SO8"/>
+            </constraints>
+            <connections>
+                <outlet property="bottomHintView" destination="U5d-Ca-LhZ" id="Tdn-md-fw1"/>
+                <outlet property="containerView" destination="m4D-31-8kN" id="Yha-od-nBV"/>
+                <outlet property="eventImageView" destination="8wZ-IL-oyC" id="DFq-sc-nsm"/>
+            </connections>
+            <point key="canvasLocation" x="346.5" y="385.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="poster_bg_battery" width="348" height="367"/>
+        <image name="poster_close" width="36" height="36"/>
+    </resources>
+</document>

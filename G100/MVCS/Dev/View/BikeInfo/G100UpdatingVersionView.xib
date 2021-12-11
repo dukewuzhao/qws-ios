@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="G100UpdatingVersionView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yeY-sN-iNq">
+                    <rect key="frame" x="77" y="170" width="260" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.59808194640000001" blue="0.0042739505879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="J5f-ul-v4l"/>
+                        <constraint firstAttribute="height" constant="40" id="cJN-Il-wpt"/>
+                        <constraint firstAttribute="width" constant="260" id="kfB-hP-x9U"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="260" id="zB5-d3-Nwy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="重新检测">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="reDetectionBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="5xs-hp-FPi"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yHu-eh-SMA">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfs-AG-gZa">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
+                            <color key="backgroundColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="gZX-lQ-Npn"/>
+                            </constraints>
+                        </view>
+                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PQ0-ir-yoZ">
+                            <rect key="frame" x="40" y="63" width="334" height="2"/>
+                            <color key="progressTintColor" red="0.0" green="0.59808194640000001" blue="0.0042739505879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </progressView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="预计剩余时间:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXH-qq-oFP">
+                            <rect key="frame" x="283.5" y="38" width="90" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.59808194640000001" blue="0.0042739505879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="psg-04-ePG">
+                            <rect key="frame" x="40" y="38" width="20" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.59808194640000001" blue="0.0042739505879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在升级" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPr-aH-0O2">
+                            <rect key="frame" x="20" y="85" width="374" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="bPr-aH-0O2" firstAttribute="leading" secondItem="yHu-eh-SMA" secondAttribute="leading" constant="20" id="Esi-6C-8Mc"/>
+                        <constraint firstItem="psg-04-ePG" firstAttribute="leading" secondItem="yHu-eh-SMA" secondAttribute="leading" constant="40" id="Mva-Bc-1Xt"/>
+                        <constraint firstAttribute="trailing" secondItem="PQ0-ir-yoZ" secondAttribute="trailing" constant="40" id="PD6-cT-tq9"/>
+                        <constraint firstItem="PQ0-ir-yoZ" firstAttribute="top" secondItem="YXH-qq-oFP" secondAttribute="bottom" constant="8" id="REH-6v-rHP"/>
+                        <constraint firstItem="PQ0-ir-yoZ" firstAttribute="leading" secondItem="yHu-eh-SMA" secondAttribute="leading" constant="40" id="UYJ-c9-Dmk"/>
+                        <constraint firstItem="psg-04-ePG" firstAttribute="top" secondItem="yHu-eh-SMA" secondAttribute="top" constant="38" id="Uw1-FN-Pot"/>
+                        <constraint firstItem="dfs-AG-gZa" firstAttribute="leading" secondItem="yHu-eh-SMA" secondAttribute="leading" id="aNO-Wt-TV4"/>
+                        <constraint firstItem="PQ0-ir-yoZ" firstAttribute="top" secondItem="psg-04-ePG" secondAttribute="bottom" constant="8" id="bnx-L8-sKN"/>
+                        <constraint firstAttribute="trailing" secondItem="dfs-AG-gZa" secondAttribute="trailing" id="cWE-Yf-rRd"/>
+                        <constraint firstItem="dfs-AG-gZa" firstAttribute="top" secondItem="yHu-eh-SMA" secondAttribute="top" id="eI2-os-tGT"/>
+                        <constraint firstItem="YXH-qq-oFP" firstAttribute="trailing" secondItem="PQ0-ir-yoZ" secondAttribute="trailing" id="kF4-dJ-dt1"/>
+                        <constraint firstItem="bPr-aH-0O2" firstAttribute="top" secondItem="PQ0-ir-yoZ" secondAttribute="bottom" constant="20" id="pUb-KC-GIv"/>
+                        <constraint firstItem="psg-04-ePG" firstAttribute="top" secondItem="dfs-AG-gZa" secondAttribute="bottom" constant="37" id="tNC-Wp-6tB"/>
+                        <constraint firstAttribute="trailing" secondItem="bPr-aH-0O2" secondAttribute="trailing" constant="20" id="tmD-3b-89Q"/>
+                        <constraint firstItem="PQ0-ir-yoZ" firstAttribute="leading" secondItem="psg-04-ePG" secondAttribute="leading" id="yC2-AP-6Pj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="yHu-eh-SMA" secondAttribute="trailing" id="byz-qB-4FM"/>
+                <constraint firstItem="yeY-sN-iNq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="nKt-o3-v7b"/>
+                <constraint firstItem="yeY-sN-iNq" firstAttribute="top" secondItem="yHu-eh-SMA" secondAttribute="bottom" id="oqh-f2-9gC"/>
+                <constraint firstItem="yHu-eh-SMA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qRl-9f-gDg"/>
+                <constraint firstAttribute="bottom" secondItem="yeY-sN-iNq" secondAttribute="bottom" constant="30" id="t2P-sS-sFE"/>
+                <constraint firstItem="yHu-eh-SMA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wXQ-Oh-9ph"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="hintLabel" destination="bPr-aH-0O2" id="66e-nZ-lWs"/>
+                <outlet property="predictTimeLabel" destination="YXH-qq-oFP" id="chU-Vn-Q6J"/>
+                <outlet property="progressBackView" destination="yHu-eh-SMA" id="8Xh-EM-YnL"/>
+                <outlet property="progressLabel" destination="psg-04-ePG" id="ubJ-qo-cP0"/>
+                <outlet property="progressView" destination="PQ0-ir-yoZ" id="dWp-Ke-4hs"/>
+                <outlet property="reDetectionBtn" destination="yeY-sN-iNq" id="xky-d5-1nG"/>
+            </connections>
+        </view>
+    </objects>
+</document>

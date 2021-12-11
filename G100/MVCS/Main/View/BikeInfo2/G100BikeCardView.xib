@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11201"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="G100BikeCardView">
+            <rect key="frame" x="0.0" y="0.0" width="394" height="220"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nfc-6W-woB">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ido-H1-8eu">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="nfc-6W-woB" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="8:11" priority="999" id="H7Y-Jh-4UO"/>
+                <constraint firstAttribute="trailing" secondItem="ido-H1-8eu" secondAttribute="trailing" id="ZHm-dr-IG3"/>
+                <constraint firstItem="nfc-6W-woB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ZVs-eF-bLZ"/>
+                <constraint firstAttribute="trailing" secondItem="nfc-6W-woB" secondAttribute="trailing" id="fuI-MI-EvY"/>
+                <constraint firstItem="ido-H1-8eu" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="3:11" priority="999" id="hZI-so-Rog"/>
+                <constraint firstItem="ido-H1-8eu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="bottom" priority="700" id="ks8-ef-ZoP"/>
+                <constraint firstItem="nfc-6W-woB" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" priority="700" id="nc8-Cw-2IG"/>
+                <constraint firstItem="ido-H1-8eu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pIm-Iy-tym"/>
+                <constraint firstItem="ido-H1-8eu" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="pUg-4w-yLg"/>
+                <constraint firstItem="nfc-6W-woB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="v0O-S4-JYv"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bottomView" destination="ido-H1-8eu" id="8Wf-6G-X7A"/>
+                <outlet property="lowViewHeightBigConstraint" destination="hZI-so-Rog" id="esX-b2-xFg"/>
+                <outlet property="lowViewHeightSmallConstraint" destination="ks8-ef-ZoP" id="9oe-gh-4ok"/>
+                <outlet property="topView" destination="nfc-6W-woB" id="rgf-cH-NGo"/>
+                <outlet property="topViewheightBigConstraint" destination="nc8-Cw-2IG" id="1jD-ba-DjC"/>
+                <outlet property="topViewheightSmallConstraint" destination="H7Y-Jh-4UO" id="jJ5-rg-3Fg"/>
+            </connections>
+            <point key="canvasLocation" x="35" y="221"/>
+        </view>
+    </objects>
+</document>

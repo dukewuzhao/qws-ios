@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12118"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DevFindingStateView">
+            <rect key="frame" x="0.0" y="0.0" width="132" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qJm-at-OpW" customClass="StateFunctionNormalView">
+                    <rect key="frame" x="0.0" y="0.0" width="132" height="80"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="swU-p2-Ao5" customClass="StateFunctionNormalView">
+                    <rect key="frame" x="0.0" y="80" width="66" height="80"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KsH-Rt-gQE" customClass="StateFunctionNormalView">
+                    <rect key="frame" x="66" y="80" width="66" height="80"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qJm-at-OpW" secondAttribute="trailing" id="1AK-KM-70S"/>
+                <constraint firstItem="KsH-Rt-gQE" firstAttribute="width" secondItem="swU-p2-Ao5" secondAttribute="width" id="4sD-uv-BqP"/>
+                <constraint firstItem="swU-p2-Ao5" firstAttribute="height" secondItem="qJm-at-OpW" secondAttribute="height" id="9vW-4V-M4F"/>
+                <constraint firstAttribute="trailing" secondItem="KsH-Rt-gQE" secondAttribute="trailing" id="A3H-Fq-XoV"/>
+                <constraint firstItem="KsH-Rt-gQE" firstAttribute="height" secondItem="qJm-at-OpW" secondAttribute="height" id="BKr-9J-3Cr"/>
+                <constraint firstAttribute="bottom" secondItem="swU-p2-Ao5" secondAttribute="bottom" id="Fr8-rt-Bde"/>
+                <constraint firstAttribute="bottom" secondItem="KsH-Rt-gQE" secondAttribute="bottom" id="VYA-un-WqE"/>
+                <constraint firstItem="swU-p2-Ao5" firstAttribute="top" secondItem="qJm-at-OpW" secondAttribute="bottom" id="VaN-ua-Fdn"/>
+                <constraint firstItem="swU-p2-Ao5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="asF-dH-DUw"/>
+                <constraint firstItem="qJm-at-OpW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ccZ-Dw-7Tg"/>
+                <constraint firstItem="qJm-at-OpW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eWq-wx-xZ2"/>
+                <constraint firstItem="KsH-Rt-gQE" firstAttribute="top" secondItem="qJm-at-OpW" secondAttribute="bottom" id="nff-Rd-cNW"/>
+                <constraint firstItem="KsH-Rt-gQE" firstAttribute="leading" secondItem="swU-p2-Ao5" secondAttribute="trailing" id="rQx-Mx-WGe"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="secondView" destination="swU-p2-Ao5" id="LB3-87-DrN"/>
+                <outlet property="thirdView" destination="KsH-Rt-gQE" id="XG9-8f-Uek"/>
+                <outlet property="topView" destination="qJm-at-OpW" id="oOA-hV-LNK"/>
+            </connections>
+            <point key="canvasLocation" x="175" y="342"/>
+        </view>
+    </objects>
+</document>

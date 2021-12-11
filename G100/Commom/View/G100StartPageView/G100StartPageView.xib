@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="G100StartPageView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default-667.png" translatesAutoresizingMaskIntoConstraints="NO" id="I64-Zc-ieY">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5O-Zk-oGL">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <connections>
+                        <action selector="tapButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="13Q-fv-0e8"/>
+                        <action selector="tapButtonClickCancel:" destination="iN0-l3-epB" eventType="touchCancel" id="Yyc-aB-el7"/>
+                        <action selector="tapButtonClickDown:" destination="iN0-l3-epB" eventType="touchDown" id="8Hn-2w-jSm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5u-Jy-ax1">
+                    <rect key="frame" x="311" y="24" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="1wS-SX-LFG"/>
+                        <constraint firstAttribute="width" constant="44" id="OcX-r5-sRj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <inset key="titleEdgeInsets" minX="-44" minY="-10" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="跳过" image="bg_start_skip">
+                        <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="skipButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="LOw-qu-MK3"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8V-cv-lkc">
+                    <rect key="frame" x="311" y="46" width="44" height="16"/>
+                    <attributedString key="attributedText">
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.058823529411764705" green="0.74901960784313726" blue="0.058823529411764705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.058823529411764705" green="0.74901960784313726" blue="0.058823529411764705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="10" name="HelveticaNeue"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="M5O-Zk-oGL" secondAttribute="trailing" id="0HK-CK-p5f"/>
+                <constraint firstItem="M5O-Zk-oGL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2fl-lE-DOe"/>
+                <constraint firstItem="I64-Zc-ieY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3ys-9t-uFF"/>
+                <constraint firstAttribute="trailing" secondItem="I64-Zc-ieY" secondAttribute="trailing" id="ALG-fN-E2u"/>
+                <constraint firstItem="D5u-Jy-ax1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="CwP-hT-lRn"/>
+                <constraint firstItem="M5O-Zk-oGL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="HLf-dT-byD"/>
+                <constraint firstItem="p8V-cv-lkc" firstAttribute="trailing" secondItem="D5u-Jy-ax1" secondAttribute="trailing" id="NPX-Mb-l2I"/>
+                <constraint firstItem="p8V-cv-lkc" firstAttribute="bottom" secondItem="D5u-Jy-ax1" secondAttribute="bottom" constant="-6" id="b6m-iG-lnK"/>
+                <constraint firstItem="p8V-cv-lkc" firstAttribute="leading" secondItem="D5u-Jy-ax1" secondAttribute="leading" id="byL-eK-inq"/>
+                <constraint firstAttribute="bottom" secondItem="I64-Zc-ieY" secondAttribute="bottom" id="dLK-oi-y98"/>
+                <constraint firstItem="p8V-cv-lkc" firstAttribute="width" secondItem="D5u-Jy-ax1" secondAttribute="width" id="hk2-BI-uw8"/>
+                <constraint firstItem="I64-Zc-ieY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="n7S-Ub-b7Y"/>
+                <constraint firstAttribute="bottom" secondItem="M5O-Zk-oGL" secondAttribute="bottom" id="q66-U1-dto"/>
+                <constraint firstAttribute="trailing" secondItem="D5u-Jy-ax1" secondAttribute="trailing" constant="20" id="yad-Uz-Uzu"/>
+            </constraints>
+            <connections>
+                <outlet property="bgImageView" destination="I64-Zc-ieY" id="WfF-ow-JXb"/>
+                <outlet property="skipConstraintTop" destination="HLf-dT-byD" id="2cJ-ND-Qbd"/>
+                <outlet property="tapButton" destination="M5O-Zk-oGL" id="qcl-kD-CvS"/>
+                <outlet property="timeRemainLabel" destination="p8V-cv-lkc" id="xIF-2p-ogB"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="Default-667.png" width="375" height="667"/>
+        <image name="bg_start_skip" width="44" height="44"/>
+    </resources>
+</document>

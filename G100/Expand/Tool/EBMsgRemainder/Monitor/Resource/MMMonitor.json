@@ -1,0 +1,33 @@
+{
+  "msg_insurance_historyInsuranceOrder" : [],
+  "msg_insurance_unall" : [],
+  "msg_insurance_underGuarantee" : [],
+  "msg_main_menu" : [
+    "msg_insurance_unall",
+    "msg_insurance_historyInsuranceOrder",
+    "msg_bike_add",
+    "msg_insurance_underGuarantee",
+    "msg_offlineMap_update"
+  ],
+  "msg_main_add" : [],
+  "msg_main_sidebar_feedback" : [],
+  "msg_main_sidebar_insurance" : [
+    "msg_insurance_unall",
+    "msg_insurance_underGuarantee",
+    "msg_insurance_historyInsuranceOrder"
+  ],
+  "msg_main_sidebar_msg" : [],
+  "msg_main_sidebar_offlineMap" : [
+    "msg_offlineMap_update"
+  ],
+  "msg_main_sidebar_order" : [
+    "msg_order_unpay",
+    "msg_order_expired"
+  ],
+  "msg_main_sidebar_set" : [
+    "msg_offlineMap_update"
+  ],
+  "msg_main_sidebar_garage" : [
+    "msg_bike_add"
+  ]
+}

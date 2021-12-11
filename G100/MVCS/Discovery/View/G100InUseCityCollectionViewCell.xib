@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="G100InUseCityCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="159" height="45"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="159" height="45"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上海" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hl7-0p-SjR">
+                        <rect key="frame" x="0.0" y="0.0" width="159" height="45"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.1764705882352941" green="0.18823529411764706" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                <color key="value" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="即将上线" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIC-Np-vMw">
+                        <rect key="frame" x="1" y="32" width="157" height="12"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="hl7-0p-SjR" secondAttribute="bottom" id="1bn-2f-WsJ"/>
+                <constraint firstAttribute="trailing" secondItem="hl7-0p-SjR" secondAttribute="trailing" id="7Lo-gw-2x1"/>
+                <constraint firstAttribute="bottom" secondItem="pIC-Np-vMw" secondAttribute="bottom" constant="1" id="RFy-on-ls9"/>
+                <constraint firstItem="hl7-0p-SjR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hVq-R0-f0v"/>
+                <constraint firstAttribute="trailing" secondItem="pIC-Np-vMw" secondAttribute="trailing" constant="1" id="mMa-ND-rrq"/>
+                <constraint firstItem="pIC-Np-vMw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="1" id="pN6-XL-AST"/>
+                <constraint firstItem="hl7-0p-SjR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="qeG-LR-kDq"/>
+            </constraints>
+            <size key="customSize" width="159" height="50"/>
+            <connections>
+                <outlet property="inUseCityLabel" destination="hl7-0p-SjR" id="efN-OO-UNU"/>
+                <outlet property="noUseCityFlag" destination="pIC-Np-vMw" id="hDB-1E-uzA"/>
+            </connections>
+            <point key="canvasLocation" x="468.5" y="370"/>
+        </collectionViewCell>
+    </objects>
+</document>
